@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"": [
+			{ "model": "mcd_d_nether:block/warped_roots/1", "weight": 2},
+			{ "model": "mcd_d_nether:block/warped_roots/2", "weight": 2},
+			{ "model": "mcd_d_nether:block/warped_roots/3", "weight": 1},
+			{ "model": "mcd_d_nether:block/warped_roots/4", "weight": 1}
+		]
+	}
+}

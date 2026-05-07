@@ -1,0 +1,78 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "mcd_d_nether:ornate_blackstone_tiles"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "mcd_d_nether:nether_tiles"
+          },
+          "output_state": {
+            "Name": "mcd_d_nether:moldy_ornate_blackstone_tiles"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "mcd_d_nether:blackstone_tiles"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "mcd_d_nether:moldy_nether_tiles"
+          },
+          "output_state": {
+            "Name": "mcd_d_nether:moldy_blackstone_tiles"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "mcd_d_nether:blackstone_tiles"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "mcd_d_nether:spalling_nether_tiles"
+          },
+          "output_state": {
+            "Name": "mcd_d_nether:spalling_blackstone_tiles"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "mcd_d_nether:blackstone_tiles"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "mcd_d_nether:rough_netherrack"
+          },
+          "output_state": {
+            "Name": "minecraft:blackstone"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:crimson_roots",
+            "probability": 0.3
+          },
+          "output_state": {
+            "Name": "mcd_d_nether:crimson_sprouts"
+          }
+        }
+      ]
+    },
+    {
+      "processor_type": "minecraft:protected_blocks",
+      "value": "#minecraft:air"
+    }
+  ]
+}

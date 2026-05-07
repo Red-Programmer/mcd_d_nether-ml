@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      {"model": "mcd_d_nether:block/observer_orchids", "weight": 1},
+      {"model": "mcd_d_nether:block/observer_orchids", "y": 90, "weight": 1},
+      {"model": "mcd_d_nether:block/observer_orchids", "y": 180, "weight": 1},
+      {"model": "mcd_d_nether:block/observer_orchids", "y": 270, "weight": 1}
+    ]
+  }
+}

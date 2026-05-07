@@ -12,16 +12,22 @@
         "sources": "https://github.com/FabricMC/fabric-example-mod"
     },
     "license": "${license}",
-    "icon": "${mod_id}.png",
+    "icon": "assets/mcd_d_nether/icon.png",
     "environment": "*",
     "entrypoints": {
         "main": [
-            "com.example.examplemod.ExampleMod"
+            "net.redupro.mcd_d_nether.McddnFabric"
+        ],
+        "client": [
+            "net.redupro.mcd_d_nether.McddnClientFabric"
+        ],
+        "fabric-datagen": [
+            "net.redupro.mcd_d_nether.McddnDataGenerator"
         ]
     },
     "mixins": [
-        "${mod_id}.mixins.json",
-        "${mod_id}.fabric.mixins.json"
+        "mcd_d_nether.mixins.json",
+        "mcd_d_nether.fabric.mixins.json"
     ],
     "depends": {
         "fabricloader": ">=${fabric_loader_version}",

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "mcd_d_nether:block/midnight_wart_block", "y": 0, "weight": 4},
+      { "model": "mcd_d_nether:block/midnight_wart_block", "y": 90, "weight": 4},
+      { "model": "mcd_d_nether:block/midnight_wart_block", "y": 180, "weight": 4},
+      { "model": "mcd_d_nether:block/midnight_wart_block", "y": 270, "weight": 4}
+    ]
+  }
+}

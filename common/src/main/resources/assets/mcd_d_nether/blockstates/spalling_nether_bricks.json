@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mcd_d_nether:block/bricks/spalling_nether_bricks"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "mcd_d_nether:block/bricks/dark_nether_bricks"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mcd_d_nether:block/bricks/dark_nether_brick_slab"
+    },
+    "type=double": {
+      "model": "mcd_d_nether:block/bricks/dark_nether_bricks"
+    },
+    "type=top": {
+      "model": "mcd_d_nether:block/bricks/dark_nether_brick_slab_top"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      {"model": "mcd_d_nether:block/stoutshroom", "weight": 1},
+      {"model": "mcd_d_nether:block/stoutshroom", "y": 90, "weight": 1},
+      {"model": "mcd_d_nether:block/stoutshroom", "y": 180, "weight": 1},
+      {"model": "mcd_d_nether:block/stoutshroom", "y": 270, "weight": 1}
+    ]
+  }
+}

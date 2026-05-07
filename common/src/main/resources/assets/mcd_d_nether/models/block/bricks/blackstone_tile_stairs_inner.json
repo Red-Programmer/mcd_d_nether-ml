@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "mcd_d_nether:block/bricks/blackstone_tiles",
+    "side": "mcd_d_nether:block/bricks/blackstone_tiles",
+    "top": "mcd_d_nether:block/bricks/blackstone_tiles"
+  }
+}

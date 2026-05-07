@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mcd_d_nether:block/warped_filament_top"
+  }
+}

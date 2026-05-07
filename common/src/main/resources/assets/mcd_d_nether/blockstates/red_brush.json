@@ -1,0 +1,37 @@
+{
+  "variants": {
+    "quadrant=quad_1,facing=north": [
+      {"model": "mcd_d_nether:block/brush/red_a", "y": 0, "weight": 1},
+      {"model": "mcd_d_nether:block/brush/red_b", "y": 0, "weight": 1},
+      {"model": "mcd_d_nether:block/brush/red_c", "y": 0, "weight": 1},
+      {"model": "mcd_d_nether:block/brush/red_d", "y": 0, "weight": 1}
+    ],
+    "quadrant=quad_1,facing=east": [
+      {"model": "mcd_d_nether:block/brush/red_a", "y": 90, "weight": 1},
+      {"model": "mcd_d_nether:block/brush/red_b", "y": 90, "weight": 1},
+      {"model": "mcd_d_nether:block/brush/red_c", "y": 90, "weight": 1},
+      {"model": "mcd_d_nether:block/brush/red_d", "y": 90, "weight": 1}
+    ],
+    "quadrant=quad_1,facing=south": [
+      {"model": "mcd_d_nether:block/brush/red_a", "y": 180, "weight": 1},
+      {"model": "mcd_d_nether:block/brush/red_b", "y": 180, "weight": 1},
+      {"model": "mcd_d_nether:block/brush/red_c", "y": 180, "weight": 1},
+      {"model": "mcd_d_nether:block/brush/red_d", "y": 180, "weight": 1}
+    ],
+    "quadrant=quad_1,facing=west": [
+      {"model": "mcd_d_nether:block/brush/red_a", "y": 270, "weight": 1},
+      {"model": "mcd_d_nether:block/brush/red_b", "y": 270, "weight": 1},
+      {"model": "mcd_d_nether:block/brush/red_c", "y": 270, "weight": 1},
+      {"model": "mcd_d_nether:block/brush/red_d", "y": 270, "weight": 1}
+    ],
+    "quadrant=quad_2": {
+      "model": "mcd_d_nether:block/nothing"
+    },
+    "quadrant=quad_3": {
+      "model": "mcd_d_nether:block/nothing"
+    },
+    "quadrant=quad_4": {
+      "model": "mcd_d_nether:block/nothing"
+    }
+  }
+}

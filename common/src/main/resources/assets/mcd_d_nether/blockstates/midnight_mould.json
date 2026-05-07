@@ -1,0 +1,30 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "mcd_d_nether:block/mould/midnight_cap"
+      },
+      "when": {
+        "cap": "true",
+        "corner": "false",
+        "edge": "false",
+        "facing": "up",
+        "half": "upper",
+        "upper": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "mcd_d_nether:block/mould/midnight_stem"
+      },
+      "when": {
+        "cap": "false",
+        "corner": "false",
+        "edge": "false",
+        "facing": "up",
+        "half": "lower",
+        "upper": "false"
+      }
+    }
+  ]
+}

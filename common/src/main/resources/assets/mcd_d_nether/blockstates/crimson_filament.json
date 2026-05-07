@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "mcd_d_nether:block/crimson_filament_bottom"
+    },
+    "half=upper": {
+      "model": "mcd_d_nether:block/crimson_filament_top"
+    }
+  }
+}

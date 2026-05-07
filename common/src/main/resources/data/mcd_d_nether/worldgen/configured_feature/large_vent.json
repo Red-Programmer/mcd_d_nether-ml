@@ -1,0 +1,17 @@
+{
+  "type": "mcd_d_nether:vent",
+  "config": {
+    "min_radius": 4,
+    "max_radius": 8,
+    "max_length": 10,
+    "height": 1,
+    "depth": 3,
+    "trim": 0.8,
+    "fill": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:lava"
+      }
+    }
+  }
+}

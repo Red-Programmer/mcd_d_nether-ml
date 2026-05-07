@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      {"model": "mcd_d_nether:block/feeler_flower", "weight": 1},
+      {"model": "mcd_d_nether:block/feeler_flower", "y": 90, "weight": 1},
+      {"model": "mcd_d_nether:block/feeler_flower", "y": 180, "weight": 1},
+      {"model": "mcd_d_nether:block/feeler_flower", "y": 270, "weight": 1}
+    ]
+  }
+}

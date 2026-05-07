@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "mcd_d_nether:midnight_mould",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "cap": "true"
+              }
+            }
+          ],
+          "name": "mcd_d_nether:midnight_wart_block"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "mcd_d_nether:midnight_mould",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ],
+          "name": "mcd_d_nether:midnight_mould"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

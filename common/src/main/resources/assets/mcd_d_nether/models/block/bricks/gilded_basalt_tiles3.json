@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "mcd_d_nether:block/bricks/gilded_basalt_tiles3"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/flower_pot_cross",
+  "textures": {
+    "plant": "mcd_d_nether:block/crimson_sprouts_pot"
+  }
+}

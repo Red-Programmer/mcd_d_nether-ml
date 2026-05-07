@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "mcd_d_nether:block/bricks/polished_red_netherrack",
+    "side": "mcd_d_nether:block/bricks/polished_red_netherrack_slab_side"
+  }
+}

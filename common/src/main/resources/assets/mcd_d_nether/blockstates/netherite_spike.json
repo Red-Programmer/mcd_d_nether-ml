@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "down=false,up=false": {
+      "model": "mcd_d_nether:block/netherite_spike"
+    },
+    "down=false,up=true": {
+      "model": "mcd_d_nether:block/netherite_spike_base"
+    },
+    "down=true,up=false": {
+      "model": "mcd_d_nether:block/netherite_spike_tip"
+    },
+    "down=true,up=true": {
+      "model": "mcd_d_nether:block/netherite_spike_mid"
+    }
+  }
+}

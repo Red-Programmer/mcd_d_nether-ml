@@ -1,0 +1,85 @@
+{
+	"name": "mcd_d_nether:decor",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/hall_decor_a",
+				"processors": "mcd_d_nether:decor_protected",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/hall_decor_b",
+				"processors": "mcd_d_nether:decor_protected",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/hall_decor_c",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/hall_decor_d",
+				"processors": "mcd_d_nether:decor_protected",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/hall_decor_long_a",
+				"processors": "mcd_d_nether:decor_translated",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/hall_decor_long_b",
+				"processors": "mcd_d_nether:decor_translated_unprotected",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/hall_decor_long_c",
+				"processors": "mcd_d_nether:decor_translated",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/hall_decor_long_d",
+				"processors": "mcd_d_nether:decor_translated",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		},
+		{
+			"weight": 4,
+			"element": {
+				"projection": "rigid",
+				"element_type": "empty_pool_element"
+			}
+		}
+	]
+}

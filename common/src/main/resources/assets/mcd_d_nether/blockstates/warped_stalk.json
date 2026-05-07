@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "mcd_d_nether:block/warped_stalk_bottom"
+    },
+    "half=upper": {
+      "model": "mcd_d_nether:block/warped_stalk_top"
+    }
+  }
+}

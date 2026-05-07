@@ -1,0 +1,59 @@
+{
+  "multipart": [
+    {
+      "apply": [
+        {
+          "model": "mcd_d_nether:block/bone_fence_post"
+        },
+        {
+          "model": "mcd_d_nether:block/bone_fence_post2"
+        },
+        {
+          "model": "mcd_d_nether:block/bone_fence_post3"
+        },
+        {
+          "model": "mcd_d_nether:block/bone_fence_post4"
+        }
+      ]
+    },
+    {
+      "apply": {
+        "model": "mcd_d_nether:block/bone_fence_side",
+        "uvlock": true
+      },
+      "when": {
+        "north": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "mcd_d_nether:block/bone_fence_side",
+        "uvlock": true,
+        "y": 90
+      },
+      "when": {
+        "east": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "mcd_d_nether:block/bone_fence_side",
+        "uvlock": true,
+        "y": 180
+      },
+      "when": {
+        "south": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "mcd_d_nether:block/bone_fence_side",
+        "uvlock": true,
+        "y": 270
+      },
+      "when": {
+        "west": "true"
+      }
+    }
+  ]
+}

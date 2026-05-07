@@ -1,0 +1,76 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [128, 128],
+	"textures": {
+		"2": "mcd_d_nether:block/nether_foliage_atlas_2",
+		"particle": "mcd_d_nether:block/midnight_wart"
+	},
+	"elements": [
+		{
+			"from": [-4.2, -14, 4],
+			"to": [-4.2, -6, 20],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-5, -14, 4]},
+			"faces": {
+				"east": {"uv": [4, 5, 2, 6], "texture": "#2"},
+				"west": {"uv": [2, 5, 4, 6], "texture": "#2"}
+			}
+		},
+		{
+			"from": [0, -14, 20.2],
+			"to": [16, -6, 20.2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -14, 21]},
+			"faces": {
+				"north": {"uv": [4, 5, 2, 6], "texture": "#2"},
+				"south": {"uv": [2, 5, 4, 6], "texture": "#2"}
+			}
+		},
+		{
+			"from": [20.2, -14, -4],
+			"to": [20.2, -6, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [21, -14, 12]},
+			"faces": {
+				"east": {"uv": [2, 5, 4, 6], "texture": "#2"},
+				"west": {"uv": [4, 5, 2, 6], "texture": "#2"}
+			}
+		},
+		{
+			"from": [-4, -14, -4.2],
+			"to": [4, -6, -4.2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [12, -14, -5]},
+			"faces": {
+				"north": {"uv": [2, 5, 3, 6], "texture": "#2"},
+				"south": {"uv": [3, 5, 2, 6], "texture": "#2"}
+			}
+		},
+		{
+			"from": [12, -14, -4.2],
+			"to": [20, -6, -4.2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [20, -14, -5]},
+			"faces": {
+				"north": {"uv": [2, 5, 3, 6], "texture": "#2"},
+				"south": {"uv": [3, 5, 2, 6], "texture": "#2"}
+			}
+		},
+		{
+			"from": [-4, -8, -4],
+			"to": [20, 16, 20],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-4, -8, -4]},
+			"faces": {
+				"north": {"uv": [10, 13, 13, 16], "texture": "#2"},
+				"east": {"uv": [7, 13, 10, 16], "texture": "#2"},
+				"south": {"uv": [4, 13, 7, 16], "texture": "#2"},
+				"west": {"uv": [13, 13, 16, 16], "texture": "#2"},
+				"up": {"uv": [1, 13, 4, 16], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [7, 6, 10, 9], "texture": "#2"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "group",
+			"origin": [-4, 0, -4],
+			"color": 0,
+			"children": [0, 1, 2, 3, 4, 5]
+		}
+	]
+}

@@ -1,0 +1,12 @@
+{
+	"parent": "minecraft:block/cube",
+	"textures": {
+		"down": "mcd_d_nether:block/midnight_wart",
+		"east": "mcd_d_nether:block/midnight_wart",
+		"north": "mcd_d_nether:block/midnight_wart_3",
+		"particle": "mcd_d_nether:block/midnight_wart",
+		"south": "mcd_d_nether:block/midnight_wart_2",
+		"up": "mcd_d_nether:block/midnight_wart",
+		"west": "mcd_d_nether:block/midnight_wart"
+	}
+}

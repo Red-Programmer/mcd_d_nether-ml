@@ -1,0 +1,193 @@
+{
+  "variants": {
+    "ivy_part=stem,facing=south,fruit=false": [
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_1", "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_2", "weight": 1}
+    ],
+    "ivy_part=stem,facing=west,fruit=false": [
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_1", "y": 90, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_2", "y": 90, "weight": 1}
+    ],
+    "ivy_part=stem,facing=north,fruit=false": [
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_1", "y": 180, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_2", "y": 180, "weight": 1}
+    ],
+    "ivy_part=stem,facing=east,fruit=false": [
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_1", "y": 270, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_2", "y": 270, "weight": 1}
+    ],
+    "ivy_part=left,facing=south,fruit=false": [
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_left_1", "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_left_2", "weight": 1}
+    ],
+    "ivy_part=left,facing=west,fruit=false": [
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_left_1", "y": 90, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_left_2", "y": 90, "weight": 1}
+    ],
+    "ivy_part=left,facing=north,fruit=false": [
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_left_1", "y": 180, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_left_2", "y": 180, "weight": 1}
+    ],
+    "ivy_part=left,facing=east,fruit=false": [
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_left_1", "y": 270, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_left_2", "y": 270, "weight": 1}
+    ],
+    "ivy_part=right,facing=south,fruit=false": [
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_right_1", "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_right_2", "weight": 1}
+    ],
+    "ivy_part=right,facing=west,fruit=false": [
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_right_1", "y": 90, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_right_2", "y": 90, "weight": 1}
+    ],
+    "ivy_part=right,facing=north,fruit=false": [
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_right_1", "y": 180, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_right_2", "y": 180, "weight": 1}
+    ],
+    "ivy_part=right,facing=east,fruit=false": [
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_right_1", "y": 270, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_right_2", "y": 270, "weight": 1}
+    ],
+    "ivy_part=leftb,facing=south,fruit=false": [
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_left_1", "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_left_2", "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_left_3", "weight": 1}
+    ],
+    "ivy_part=leftb,facing=west,fruit=false": [
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_left_1", "y": 90, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_left_2", "y": 90, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_left_3", "y": 90, "weight": 1}
+    ],
+    "ivy_part=leftb,facing=north,fruit=false": [
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_left_1", "y": 180, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_left_2", "y": 180, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_left_3", "y": 180, "weight": 1}
+    ],
+    "ivy_part=leftb,facing=east,fruit=false": [
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_left_1", "y": 270, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_left_2", "y": 270, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_left_3", "y": 270, "weight": 1}
+    ],
+    "ivy_part=rightb,facing=south,fruit=false": [
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_right_1", "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_right_2", "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_right_3", "weight": 1}
+    ],
+    "ivy_part=rightb,facing=west,fruit=false": [
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_right_1", "y": 90, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_right_2", "y": 90, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_right_3", "y": 90, "weight": 1}
+    ],
+    "ivy_part=rightb,facing=north,fruit=false": [
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_right_1", "y": 180, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_right_2", "y": 180, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_right_3", "y": 180, "weight": 1}
+    ],
+    "ivy_part=rightb,facing=east,fruit=false": [
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_right_1", "y": 270, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_right_2", "y": 270, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_right_3", "y": 270, "weight": 1}
+    ],
+    "ivy_part=tip,facing=south,fruit=false": {
+      "model": "mcd_d_nether:block/crimson_ivy/top", "weight": 1
+    },
+    "ivy_part=tip,facing=west,fruit=false": {
+      "model": "mcd_d_nether:block/crimson_ivy/top", "y": 90, "weight": 1
+    },
+    "ivy_part=tip,facing=north,fruit=false": {
+      "model": "mcd_d_nether:block/crimson_ivy/top", "y": 180, "weight": 1
+    },
+    "ivy_part=tip,facing=east,fruit=false": {
+      "model": "mcd_d_nether:block/crimson_ivy/top", "y": 270, "weight": 1
+    },
+    "ivy_part=root,facing=south,fruit=false": {
+      "model": "mcd_d_nether:block/crimson_ivy/base", "weight": 1
+    },
+    "ivy_part=root,facing=west,fruit=false": {
+      "model": "mcd_d_nether:block/crimson_ivy/base", "y": 90, "weight": 1
+    },
+    "ivy_part=root,facing=north,fruit=false": {
+      "model": "mcd_d_nether:block/crimson_ivy/base", "y": 180, "weight": 1
+    },
+    "ivy_part=root,facing=east,fruit=false": {
+      "model": "mcd_d_nether:block/crimson_ivy/base", "y": 270, "weight": 1
+    },
+
+    "ivy_part=left,facing=south,fruit=true": [
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_left_fruit_1", "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_left_fruit_2", "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_left_fruit_3", "weight": 1}
+    ],
+    "ivy_part=left,facing=west,fruit=true": [
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_left_fruit_1", "y": 90, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_left_fruit_2", "y": 90, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_left_fruit_3", "y": 90, "weight": 1}
+    ],
+    "ivy_part=left,facing=north,fruit=true": [
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_left_fruit_1", "y": 180, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_left_fruit_2", "y": 180, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_left_fruit_3", "y": 180, "weight": 1}
+    ],
+    "ivy_part=left,facing=east,fruit=true": [
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_left_fruit_1", "y": 270, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_left_fruit_2", "y": 270, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_left_fruit_3", "y": 270, "weight": 1}
+    ],
+    "ivy_part=right,facing=south,fruit=true": [
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_right_fruit_1", "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_right_fruit_2", "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_right_fruit_3", "weight": 1}
+    ],
+    "ivy_part=right,facing=west,fruit=true": [
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_right_fruit_1", "y": 90, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_right_fruit_2", "y": 90, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_right_fruit_3", "y": 90, "weight": 1}
+    ],
+    "ivy_part=right,facing=north,fruit=true": [
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_right_fruit_1", "y": 180, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_right_fruit_2", "y": 180, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_right_fruit_3", "y": 180, "weight": 1}
+    ],
+    "ivy_part=right,facing=east,fruit=true": [
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_right_fruit_1", "y": 270, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_right_fruit_2", "y": 270, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/stem_right_fruit_3", "y": 270, "weight": 1}
+    ],
+    "ivy_part=leftb,facing=south,fruit=true": [
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_left_fruit_1", "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_left_fruit_2", "weight": 1}
+    ],
+    "ivy_part=leftb,facing=west,fruit=true": [
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_left_fruit_1", "y": 90, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_left_fruit_2", "y": 90, "weight": 1}
+    ],
+    "ivy_part=leftb,facing=north,fruit=true": [
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_left_fruit_1", "y": 180, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_left_fruit_2", "y": 180, "weight": 1}
+    ],
+    "ivy_part=leftb,facing=east,fruit=true": [
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_left_fruit_1", "y": 270, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_left_fruit_2", "y": 270, "weight": 1}
+    ],
+    "ivy_part=rightb,facing=south,fruit=true": [
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_right_fruit_1", "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_right_fruit_2", "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_right_fruit_3", "weight": 1}
+    ],
+    "ivy_part=rightb,facing=west,fruit=true": [
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_right_fruit_1", "y": 90, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_right_fruit_2", "y": 90, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_right_fruit_3", "y": 90, "weight": 1}
+    ],
+    "ivy_part=rightb,facing=north,fruit=true": [
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_right_fruit_1", "y": 180, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_right_fruit_2", "y": 180, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_right_fruit_3", "y": 180, "weight": 1}
+    ],
+    "ivy_part=rightb,facing=east,fruit=true": [
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_right_fruit_1", "y": 270, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_right_fruit_2", "y": 270, "weight": 1},
+      {"model": "mcd_d_nether:block/crimson_ivy/branch_right_fruit_3", "y": 270, "weight": 1}
+    ]
+  }
+}

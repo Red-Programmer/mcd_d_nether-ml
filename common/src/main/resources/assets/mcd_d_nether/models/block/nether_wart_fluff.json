@@ -1,0 +1,38 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"texture_size": [128, 128],
+	"textures": {
+		"3": "mcd_d_nether:block/nether_foliage_atlas_2",
+		"particle": "block/weeping_vines_plant"
+	},
+	"elements": [
+		{
+			"from": [0, -0.2, 0.8],
+			"to": [16, 16.8, 0.8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 15, 0]},
+			"faces": {
+				"north": {"uv": [8, 0.625, 6, 2.75], "texture": "#3"},
+				"south": {"uv": [6, 0.625, 8, 2.75], "texture": "#3"}
+			}
+		},
+		{
+			"from": [0, 16.8, -4.19],
+			"to": [8, 16.8, 0.81],
+			"rotation": {"angle": 0, "axis": "x", "origin": [0, 16.8, 0.8]},
+			"faces": {
+				"up": {"uv": [7, 0.625, 6, 0], "rotation": 180, "texture": "#3"},
+				"down": {"uv": [6, 0.625, 7, 0], "texture": "#3"}
+			}
+		},
+		{
+			"from": [8, 16.79, -4.19],
+			"to": [16, 16.79, 0.81],
+			"rotation": {"angle": 0, "axis": "x", "origin": [0, 16.8, 0.8]},
+			"faces": {
+				"up": {"uv": [8, 0.625, 7, 0], "rotation": 180, "texture": "#3"},
+				"down": {"uv": [7, 0.625, 8, 0], "texture": "#3"}
+			}
+		}
+	]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "mcd_d_nether:block/nether_sprouts/2"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "ambient.warped_forest.additions": {
+    "sounds": [
+      {
+        "name": "mcd_d_nether:ambient/nether/warped_forest/addition1",
+        "volume": 0.07,
+        "weight": 3
+      },
+      {
+        "name": "mcd_d_nether:ambient/nether/warped_forest/addition2",
+        "volume": 0.07,
+        "weight": 3
+      }
+    ]
+  }
+}

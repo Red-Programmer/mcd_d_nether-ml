@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      {"model": "mcd_d_nether:block/fluorescent_flower_inverted", "weight": 1},
+      {"model": "mcd_d_nether:block/fluorescent_flower_inverted", "y": 90, "weight": 1},
+      {"model": "mcd_d_nether:block/fluorescent_flower_inverted", "y": 180, "weight": 1},
+      {"model": "mcd_d_nether:block/fluorescent_flower_inverted", "y": 270, "weight": 1}
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [128, 128],
+	"textures": {
+		"2": "mcd_d_nether:block/nether_foliage_atlas_2",
+		"particle": "minecraft:block/warped_wart_block"
+	},
+	"elements": [
+		{
+			"from": [-3, -14, 20.2],
+			"to": [13, -6, 20.2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-3, -14, 21]},
+			"faces": {
+				"north": {"uv": [4, 4, 2, 5], "texture": "#2"},
+				"south": {"uv": [2, 4, 4, 5], "texture": "#2"}
+			}
+		},
+		{
+			"from": [20.2, -14, 0],
+			"to": [20.2, -6, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [21, -14, 16]},
+			"faces": {
+				"east": {"uv": [2, 4, 4, 5], "texture": "#2"},
+				"west": {"uv": [4, 4, 2, 5], "texture": "#2"}
+			}
+		},
+		{
+			"from": [-3, -14, -4.2],
+			"to": [13, -6, -4.2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [13, -14, -5]},
+			"faces": {
+				"north": {"uv": [2, 4, 4, 5], "texture": "#2"},
+				"south": {"uv": [4, 4, 2, 5], "texture": "#2"}
+			}
+		},
+		{
+			"from": [-4, -8, -4],
+			"to": [20, 24, 20],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-4, -8, -4]},
+			"faces": {
+				"north": {"uv": [10, 9, 13, 13], "texture": "#2"},
+				"east": {"uv": [7, 9, 10, 13], "texture": "#2"},
+				"south": {"uv": [4, 9, 7, 13], "texture": "#2"},
+				"west": {"uv": [13, 9, 16, 13], "texture": "#2"},
+				"up": {"uv": [1, 10, 4, 13], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [4, 6, 7, 9], "texture": "#2"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "group",
+			"origin": [-4, 0, -4],
+			"color": 0,
+			"children": [0, 1, 2, 3]
+		}
+	]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "lithostitched:add_template_pool_elements",
+  "template_pools": "mcd_d_nether:big_cap",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "lithostitched:delegating",
+        "delegate": {
+          "element_type": "mcd_d_nether:advanced_feature_pool_element",
+          "projection": "rigid",
+          "feature_north": "mcd_d_nether:big_fortress_cap_n",
+          "feature_south": "mcd_d_nether:big_fortress_cap_s",
+          "feature_east": "mcd_d_nether:big_fortress_cap_e",
+          "feature_west": "mcd_d_nether:big_fortress_cap_w"
+        },
+        "allow_bounding_box_collisions": true,
+        "other_pieces_can_intersect": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "axis=x": [
+      { "model": "mcd_d_nether:block/bone_block/1", "x": 90, "y": 90, "weight": 2 },
+      { "model": "mcd_d_nether:block/bone_block/2", "x": 90, "y": 90 },
+      { "model": "mcd_d_nether:block/bone_block/3", "x": 90, "y": 90 },
+      { "model": "mcd_d_nether:block/bone_block/4", "x": 90, "y": 90 }
+    ],
+    "axis=y": [
+      { "model": "mcd_d_nether:block/bone_block/1", "weight": 2 },
+      { "model": "mcd_d_nether:block/bone_block/2" },
+      { "model": "mcd_d_nether:block/bone_block/3" },
+      { "model": "mcd_d_nether:block/bone_block/4" }
+    ],
+    "axis=z": [
+      { "model": "mcd_d_nether:block/bone_block/1", "x": 90, "weight": 2 },
+      { "model": "mcd_d_nether:block/bone_block/2", "x": 90 },
+      { "model": "mcd_d_nether:block/bone_block/3", "x": 90 },
+      { "model": "mcd_d_nether:block/bone_block/4", "x": 90 }
+
+    ]
+  }
+}

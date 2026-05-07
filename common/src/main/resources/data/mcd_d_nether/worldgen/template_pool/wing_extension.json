@@ -1,0 +1,159 @@
+{
+	"name": "mcd_d_nether:wing_extension",
+	"fallback": "mcd_d_nether:cap",
+	"elements": [
+		{
+			"weight": 2,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/balcony",
+				"processors": "mcd_d_nether:nether_fortress_protected",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		},
+		{
+			"weight": 2,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/big_1",
+				"processors": "mcd_d_nether:nether_fortress_protected",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		},
+		{
+			"weight": 2,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/big_2",
+				"processors": "mcd_d_nether:nether_fortress_protected",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/bridge_room_a",
+				"processors": "mcd_d_nether:nether_fortress_protected",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/bridge_room_b",
+				"processors": "mcd_d_nether:nether_fortress_protected",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/three_way_room",
+				"processors": "mcd_d_nether:nether_fortress_protected",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/four_way_room",
+				"processors": "mcd_d_nether:nether_fortress_protected",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/five_way_room",
+				"processors": "mcd_d_nether:nether_fortress_protected",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/eight_way_room",
+				"processors": "mcd_d_nether:nether_fortress_protected",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/loot_room_a",
+				"processors": "mcd_d_nether:nether_fortress_protected",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/loot_room_b",
+				"processors": "mcd_d_nether:nether_fortress_protected",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/loot_room_c",
+				"processors": "mcd_d_nether:nether_fortress_protected",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/spawner_room_a",
+				"processors": "mcd_d_nether:nether_fortress_protected",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/spawner_room_b",
+				"processors": "mcd_d_nether:nether_fortress_protected",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/spawner_room_c",
+				"processors": "mcd_d_nether:nether_fortress_protected",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/spawner_room_d",
+				"processors": "mcd_d_nether:nether_fortress_protected",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "mcd_d_nether:nether_fortress/intersection",
+				"processors": "mcd_d_nether:nether_fortress_protected",
+				"projection": "rigid",
+				"element_type": "single_pool_element"
+			}
+		}
+	]
+}

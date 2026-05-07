@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "mcd_d_nether:block/bone_block/top",
+    "side": "mcd_d_nether:block/bone_block/side_3"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=down": {"model": "mcd_d_nether:block/fluorescent_fungus", "weight": 1},
+    "facing=up": {"model": "mcd_d_nether:block/fluorescent_fungus", "x": 180, "weight": 1},
+    "facing=north": {"model": "mcd_d_nether:block/fluorescent_fungus", "x": 270, "weight": 1},
+    "facing=east": {"model": "mcd_d_nether:block/fluorescent_fungus", "x": 270, "y": 90, "weight": 1},
+    "facing=south": {"model": "mcd_d_nether:block/fluorescent_fungus", "x": 270, "y": 180, "weight": 1},
+    "facing=west": {"model": "mcd_d_nether:block/fluorescent_fungus", "x": 270, "y": 270, "weight": 1}
+  }
+}

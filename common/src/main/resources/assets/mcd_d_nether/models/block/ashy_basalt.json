@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "mcd_d_nether:block/ashy_basalt_top",
+    "side": "mcd_d_nether:block/ashy_basalt_side"
+  }
+}

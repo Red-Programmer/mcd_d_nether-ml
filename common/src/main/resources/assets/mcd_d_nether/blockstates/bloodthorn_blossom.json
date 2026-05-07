@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "": [
+      {"model": "mcd_d_nether:block/bloodthorn_blossom", "weight": 1},
+      {"model": "mcd_d_nether:block/bloodthorn_blossom", "y": 90, "weight": 1},
+      {"model": "mcd_d_nether:block/bloodthorn_blossom", "y": 180, "weight": 1},
+      {"model": "mcd_d_nether:block/bloodthorn_blossom", "y": 270, "weight": 1},
+      {"model": "mcd_d_nether:block/bloodthorn_blossom_short", "weight": 1},
+      {"model": "mcd_d_nether:block/bloodthorn_blossom_short", "y": 90, "weight": 1},
+      {"model": "mcd_d_nether:block/bloodthorn_blossom_short", "y": 180, "weight": 1},
+      {"model": "mcd_d_nether:block/bloodthorn_blossom_short", "y": 270, "weight": 1}
+    ]
+  }
+}

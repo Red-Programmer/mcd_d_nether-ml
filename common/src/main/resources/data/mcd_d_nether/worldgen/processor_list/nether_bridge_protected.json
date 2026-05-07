@@ -1,0 +1,497 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:air"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:powder_snow"
+          },
+          "output_state": {
+            "Name": "minecraft:air"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:powder_snow"
+          },
+          "output_state": {
+            "Name": "minecraft:nether_bricks"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:air"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:nether_brick_fence",
+              "Properties": {
+                "east": "false",
+                "north": "false",
+                "south": "false",
+                "west": "false"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "minecraft:nether_brick_fence",
+            "Properties": {
+              "east": "false",
+              "north": "false",
+              "south": "false",
+              "west": "false"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:air"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:nether_brick_fence",
+              "Properties": {
+                "east": "true",
+                "north": "false",
+                "south": "false",
+                "west": "false"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "minecraft:nether_brick_fence",
+            "Properties": {
+              "east": "true",
+              "north": "false",
+              "south": "false",
+              "west": "false"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:air"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:nether_brick_fence",
+              "Properties": {
+                "east": "false",
+                "north": "true",
+                "south": "false",
+                "west": "false"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "minecraft:nether_brick_fence",
+            "Properties": {
+              "east": "false",
+              "north": "true",
+              "south": "false",
+              "west": "false"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:air"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:nether_brick_fence",
+              "Properties": {
+                "east": "false",
+                "north": "false",
+                "south": "true",
+                "west": "false"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "minecraft:nether_brick_fence",
+            "Properties": {
+              "east": "false",
+              "north": "false",
+              "south": "true",
+              "west": "false"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:air"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:nether_brick_fence",
+              "Properties": {
+                "east": "false",
+                "north": "false",
+                "south": "false",
+                "west": "true"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "minecraft:nether_brick_fence",
+            "Properties": {
+              "east": "false",
+              "north": "false",
+              "south": "false",
+              "west": "true"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:air"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:nether_brick_fence",
+              "Properties": {
+                "east": "true",
+                "north": "false",
+                "south": "false",
+                "west": "true"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "minecraft:nether_brick_fence",
+            "Properties": {
+              "east": "true",
+              "north": "false",
+              "south": "false",
+              "west": "true"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:air"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:nether_brick_fence",
+              "Properties": {
+                "east": "false",
+                "north": "true",
+                "south": "true",
+                "west": "false"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "minecraft:nether_brick_fence",
+            "Properties": {
+              "east": "false",
+              "north": "true",
+              "south": "true",
+              "west": "false"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:nether_brick_fence"
+          },
+          "output_state": {
+            "Name": "minecraft:nether_bricks"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:air"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:polished_blackstone_wall",
+              "Properties": {
+                "north": "tall",
+                "south": "tall",
+                "up": "false"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "minecraft:polished_blackstone_wall",
+            "Properties": {
+              "east": "tall",
+              "up": "false",
+              "west": "tall"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:air"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:polished_blackstone_wall",
+              "Properties": {
+                "north": "tall",
+                "south": "tall",
+                "up": "false"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "minecraft:polished_blackstone_wall",
+            "Properties": {
+              "north": "tall",
+              "south": "tall",
+              "up": "false"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:air"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:polished_blackstone_wall",
+              "Properties": {
+                "north": "tall",
+                "south": "low",
+                "up": "true"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "minecraft:polished_blackstone_wall",
+            "Properties": {
+              "north": "tall",
+              "south": "low",
+              "up": "true"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:air"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:polished_blackstone_wall",
+              "Properties": {
+                "north": "low",
+                "south": "tall",
+                "up": "true"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "minecraft:polished_blackstone_wall",
+            "Properties": {
+              "north": "low",
+              "south": "tall",
+              "up": "true"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:air"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:polished_blackstone_wall",
+              "Properties": {
+                "east": "tall",
+                "up": "true",
+                "west": "low"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "minecraft:polished_blackstone_wall",
+            "Properties": {
+              "east": "tall",
+              "up": "true",
+              "west": "low"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:air"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:polished_blackstone_wall",
+              "Properties": {
+                "east": "low",
+                "up": "true",
+                "west": "tall"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "minecraft:polished_blackstone_wall",
+            "Properties": {
+              "east": "low",
+              "up": "true",
+              "west": "tall"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:air"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:polished_blackstone_wall",
+              "Properties": {
+                "north": "low",
+                "south": "low",
+                "up": "false"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "minecraft:polished_blackstone_wall",
+            "Properties": {
+              "north": "low",
+              "south": "low",
+              "up": "false"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:air"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:polished_blackstone_wall",
+              "Properties": {
+                "east": "low",
+                "up": "false",
+                "west": "low"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "minecraft:polished_blackstone_wall",
+            "Properties": {
+              "east": "low",
+              "up": "false",
+              "west": "low"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:air"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:polished_blackstone_wall",
+              "Properties": {
+                "north": "low",
+                "south": "low",
+                "up": "true"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "minecraft:polished_blackstone_wall",
+            "Properties": {
+              "north": "low",
+              "south": "low",
+              "up": "true"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:air"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:polished_blackstone_wall",
+              "Properties": {
+                "east": "low",
+                "up": "true",
+                "west": "low"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "minecraft:polished_blackstone_wall",
+            "Properties": {
+              "east": "low",
+              "up": "true",
+              "west": "low"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:polished_blackstone_wall"
+          },
+          "output_state": {
+            "Name": "minecraft:nether_bricks"
+          }
+        }
+      ]
+    }
+  ]
+}

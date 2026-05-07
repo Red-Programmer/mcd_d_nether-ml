@@ -1,0 +1,14 @@
+{
+  "name": "mcd_d_nether:vegetation_feature",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "projection": "rigid",
+        "element_type": "feature_pool_element",
+        "feature": "minecraft:crimson_forest_vegetation"
+      }
+    }
+  ]
+}

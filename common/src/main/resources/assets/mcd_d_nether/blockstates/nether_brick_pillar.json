@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "mcd_d_nether:block/bricks/nether_brick_pillar",
+      "x": -90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "mcd_d_nether:block/bricks/nether_brick_pillar"
+    },
+    "axis=z": {
+      "model": "mcd_d_nether:block/bricks/nether_brick_pillar",
+      "x": -90
+    }
+  }
+}

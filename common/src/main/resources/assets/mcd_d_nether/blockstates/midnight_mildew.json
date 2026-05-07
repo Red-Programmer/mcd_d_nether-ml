@@ -1,0 +1,36 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "age": "25|21|17|13|9|5|1|0"
+      },
+      "apply": {
+        "model": "mcd_d_nether:block/mildew/red_sprout"
+      }
+    },
+    {
+      "when": {
+        "age": "24|20|16|12|8|4"
+      },
+      "apply": {
+        "model": "mcd_d_nether:block/mildew/red_small"
+      }
+    },
+    {
+      "when": {
+        "age": "23|19|15|11|7|3"
+      },
+      "apply": {
+        "model": "mcd_d_nether:block/mildew/red_large"
+      }
+    },
+    {
+      "when": {
+        "age": "22|18|14|10|6|2"
+      },
+      "apply": {
+        "model": "mcd_d_nether:block/mildew/red_dying"
+      }
+    }
+  ]
+}

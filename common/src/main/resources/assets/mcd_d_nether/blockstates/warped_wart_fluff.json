@@ -1,0 +1,144 @@
+{
+  "multipart": [
+    {
+      "apply": [
+        {"model": "mcd_d_nether:block/warped_wart_fluff/1", "weight":  1},
+        {"model": "mcd_d_nether:block/warped_wart_fluff/2", "weight":  1},
+        {"model": "mcd_d_nether:block/warped_wart_fluff/3", "weight":  1}
+      ],
+      "when": {
+        "hanging": "false",
+        "facing": "north",
+        "half": "upper"
+      }
+    },
+    {
+      "apply": [
+        { "model": "mcd_d_nether:block/warped_wart_fluff/1", "y": 90, "weight":  1},
+        { "model": "mcd_d_nether:block/warped_wart_fluff/2", "y": 90, "weight":  1},
+        { "model": "mcd_d_nether:block/warped_wart_fluff/3", "y": 90, "weight":  1}
+      ],
+      "when": {
+        "hanging": "false",
+        "facing": "east",
+        "half": "upper"
+      }
+    },
+    {
+      "apply": [
+        { "model": "mcd_d_nether:block/warped_wart_fluff/1", "y": 180, "weight":  1},
+        { "model": "mcd_d_nether:block/warped_wart_fluff/2", "y": 180, "weight":  1},
+        { "model": "mcd_d_nether:block/warped_wart_fluff/3", "y": 180, "weight":  1}
+      ],
+      "when": {
+        "hanging": "false",
+        "facing": "south",
+        "half": "upper"
+      }
+    },
+    {
+      "apply": [
+        { "model": "mcd_d_nether:block/warped_wart_fluff/1", "y": 270, "weight":  1},
+        { "model": "mcd_d_nether:block/warped_wart_fluff/2", "y": 270, "weight":  1},
+        { "model": "mcd_d_nether:block/warped_wart_fluff/3", "y": 270, "weight":  1}
+      ],
+      "when": {
+        "hanging": "false",
+        "facing": "west",
+        "half": "upper"
+      }
+    },
+    {
+      "apply": [
+        { "model": "mcd_d_nether:block/warped_wart_fluff/hanging_1", "weight":  1},
+        { "model": "mcd_d_nether:block/warped_wart_fluff/hanging_2", "weight":  1},
+        { "model": "mcd_d_nether:block/warped_wart_fluff/hanging_3", "weight":  1}
+      ],
+      "when": {
+        "hanging": "true",
+        "facing": "north",
+        "half": "upper"
+      }
+    },
+    {
+      "apply": [
+        { "model": "mcd_d_nether:block/warped_wart_fluff/hanging_1", "y": 90, "weight":  1},
+        { "model": "mcd_d_nether:block/warped_wart_fluff/hanging_2", "y": 90, "weight":  1},
+        { "model": "mcd_d_nether:block/warped_wart_fluff/hanging_3", "y": 90, "weight":  1}
+      ],
+      "when": {
+        "hanging": "true",
+        "facing": "east",
+        "half": "upper"
+      }
+    },
+    {
+      "apply": [
+        { "model": "mcd_d_nether:block/warped_wart_fluff/hanging_1", "y": 180, "weight":  1},
+        { "model": "mcd_d_nether:block/warped_wart_fluff/hanging_2", "y": 180, "weight":  1},
+        { "model": "mcd_d_nether:block/warped_wart_fluff/hanging_3", "y": 180, "weight":  1}
+      ],
+      "when": {
+        "hanging": "true",
+        "facing": "south",
+        "half": "upper"
+      }
+    },
+    {
+      "apply": [
+        { "model": "mcd_d_nether:block/warped_wart_fluff/hanging_1", "y": 270, "weight":  1},
+        { "model": "mcd_d_nether:block/warped_wart_fluff/hanging_2", "y": 270, "weight":  1},
+        { "model": "mcd_d_nether:block/warped_wart_fluff/hanging_3", "y": 270, "weight":  1}
+      ],
+      "when": {
+        "hanging": "true",
+        "facing": "west",
+        "half": "upper"
+      }
+    },
+    {
+      "apply": [
+        { "model": "mcd_d_nether:block/warped_wart_fluff/1_bottom", "weight":  1},
+        { "model": "mcd_d_nether:block/warped_wart_fluff/2_bottom", "weight":  1},
+        { "model": "mcd_d_nether:block/warped_wart_fluff/3_bottom", "weight":  1}
+      ],
+      "when": {
+        "facing": "north",
+        "half": "lower"
+      }
+    },
+    {
+      "apply": [
+        { "model": "mcd_d_nether:block/warped_wart_fluff/1_bottom", "y": 90, "weight":  1},
+        { "model": "mcd_d_nether:block/warped_wart_fluff/2_bottom", "y": 90, "weight":  1},
+        { "model": "mcd_d_nether:block/warped_wart_fluff/3_bottom", "y": 90, "weight":  1}
+      ],
+      "when": {
+        "facing": "east",
+        "half": "lower"
+      }
+    },
+    {
+      "apply": [
+        { "model": "mcd_d_nether:block/warped_wart_fluff/1_bottom", "y": 180, "weight":  1},
+        { "model": "mcd_d_nether:block/warped_wart_fluff/2_bottom", "y": 180, "weight":  1},
+        { "model": "mcd_d_nether:block/warped_wart_fluff/3_bottom", "y": 180, "weight":  1}
+      ],
+      "when": {
+        "facing": "south",
+        "half": "lower"
+      }
+    },
+    {
+      "apply": [
+        { "model": "mcd_d_nether:block/warped_wart_fluff/1_bottom", "y": 270, "weight":  1},
+        { "model": "mcd_d_nether:block/warped_wart_fluff/2_bottom", "y": 270, "weight":  1},
+        { "model": "mcd_d_nether:block/warped_wart_fluff/3_bottom", "y": 270, "weight":  1}
+      ],
+      "when": {
+        "facing": "west",
+        "half": "lower"
+      }
+    }
+  ]
+}
