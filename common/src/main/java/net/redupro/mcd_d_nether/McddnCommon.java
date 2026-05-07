@@ -6,7 +6,6 @@ import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConf
 import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.SimpleRandomFeatureConfiguration;
 import net.minecraft.world.level.levelgen.structure.pools.StructurePoolElementType;
-import net.redupro.mcd_d_nether.block.custom.*;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.redupro.mcd_d_nether.world.level.levelgen.feature.*;
 import net.redupro.mcd_d_nether.world.level.levelgen.structure.pools.AdvancedFeaturePoolElement;
