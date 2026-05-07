@@ -21,7 +21,7 @@ import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.redupro.mcd_d_nether.block.McddnBlocks;
+import net.redupro.mcd_d_nether.registry.McddnBlocks;
 
 public class MouldBlock extends TallRootsBlock {
     public static final BooleanProperty CAP = BooleanProperty.create("cap");

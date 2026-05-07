@@ -11,7 +11,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.BasaltColumnsFeature;
-import net.redupro.mcd_d_nether.block.McddnBlocks;
+import net.redupro.mcd_d_nether.registry.McddnBlocks;
 import net.redupro.mcd_d_nether.util.McddnTags;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

@@ -1,4 +1,4 @@
-package net.redupro.mcd_d_nether.block;
+package net.redupro.mcd_d_nether.registry;
 
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -13,13 +13,13 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.redupro.mcd_d_nether.Constants;
+import net.redupro.mcd_d_nether.block.Ivy;
 import net.redupro.mcd_d_nether.block.custom.*;
 import net.redupro.mcd_d_nether.item.McddnFoodComponents;
 import java.util.function.Function;
 
 import static net.minecraft.world.level.block.Blocks.flowerPotProperties;
 
-@SuppressWarnings("DataFlowIssue")
 public class McddnBlocks {
     public static final Block WARPED_BLOSSOM = register(
             "warped_blossom",
@@ -544,6 +544,92 @@ public class McddnBlocks {
             true
     );
 
+    public static Block[] buildingBlocks = {
+            ORNATE_BLACKSTONE_TILES,
+            MOLDY_ORNATE_BLACKSTONE_TILES,
+            BLACKSTONE_TILES,
+            BLACKSTONE_TILE_SLAB,
+            BLACKSTONE_TILES_STAIRS,
+            MOLDY_BLACKSTONE_TILES,
+            SPALLING_BLACKSTONE_TILES,
+            POLISHED_NETHERRACK,
+            POLISHED_NETHERRACK_SLAB,
+            ORNATE_POLISHED_NETHERRACK,
+            NETHER_BRICK_PILLAR,
+            ORNATE_NETHER_TILES,
+            MOLDY_ORNATE_NETHER_TILES,
+            NETHER_TILES,
+            NETHER_TILE_SLAB,
+            NETHER_TILE_STAIRS,
+            MOLDY_NETHER_TILES,
+            SPALLING_NETHER_TILES,
+            SPALLING_NETHER_BRICKS,
+            POLISHED_RED_NETHERRACK,
+            POLISHED_RED_NETHERRACK_SLAB,
+            ORNATE_POLISHED_RED_NETHERRACK,
+            RED_NETHER_BRICK_PILLAR,
+            ORNATE_RED_NETHER_TILES,
+            MOLDY_ORNATE_RED_NETHER_TILES,
+            RED_NETHER_TILES,
+            RED_NETHER_TILE_SLAB,
+            RED_NETHER_TILE_STAIRS,
+            MOLDY_RED_NETHER_TILES,
+            SPALLING_RED_NETHER_TILES,
+            SPALLING_RED_NETHER_BRICKS,
+            POLISHED_DARK_NETHERRACK,
+            POLISHED_DARK_NETHERRACK_SLAB,
+            DARK_NETHER_BRICKS,
+            DARK_NETHER_BRICK_SLAB,
+            DARK_NETHER_BRICK_STAIRS,
+            DARK_NETHER_BRICK_FENCE,
+            DARK_NETHER_BRICK_WALL,
+            BASALT_TILES,
+            BASALT_TILE_SLAB,
+            BASALT_TILE_STAIRS,
+            GILDED_BASALT_TILES,
+            SPALLING_BASALT_TILES,
+            ROUGH_NETHERRACK,
+            BONE_FENCE,
+            NETHERITE_BARS,
+            NETHERITE_SPIKE,
+            NETHERITE_CHAIN
+    };
+    public static Block[] naturalBlocks = {
+            WARPED_BLOSSOM,
+            WARPED_WART_FLUFF,
+            NETHER_WART_FLUFF,
+            WARPING_VINES,
+            WARPED_STALK,
+            CRIMSON_STALK,
+            SHY_SUCCULENT,
+            MOONLIGHT_MILDEW,
+            MIDNIGHT_MILDEW,
+            FLUORESCENT_FLOWER,
+            FLUORESCENT_FIG,
+            FLUORESCENT_FUNGUS,
+            FEELER_FLOWER,
+            FROG_FLOWER,
+            FUNGAL_FERN,
+            SIPHON_STALK,
+            NETHER_WALL_FLOWER,
+            BLOODTHORN_BLOSSOM,
+            FLUORESCENT_FLOWER_INV,
+            GASEOUS_GLOB,
+            OBSERVER_ORCHIDS,
+            STOUTSHROOM,
+            RED_BRUSH,
+            TEAL_BRUSH,
+            MOONLIGHT_MOULD,
+            MIDNIGHT_MOULD,
+            CRIMSON_IVY,
+            MIDNIGHT_WART_BLOCK,
+            SPORANGIUM,
+            TALL_SPORANGIUM,
+            WARPED_FILAMENT,
+            CRIMSON_FILAMENT,
+            CRIMSON_SPROUTS,
+            ASH
+    };
 
     private static Block register(String name, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, boolean shouldRegisterItem) {
         ResourceKey<Block> blockKey = keyOfBlock(name);
@@ -586,4 +672,5 @@ public class McddnBlocks {
     private static ResourceKey<Item> keyOfItem(String name) {
         return ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Constants.MOD_ID, name));
     }
+    public static void init() {}
 }

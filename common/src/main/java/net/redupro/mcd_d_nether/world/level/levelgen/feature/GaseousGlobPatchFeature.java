@@ -8,7 +8,7 @@ import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration;
-import net.redupro.mcd_d_nether.block.McddnBlocks;
+import net.redupro.mcd_d_nether.registry.McddnBlocks;
 import net.redupro.mcd_d_nether.block.custom.GlobBlock;
 
 

@@ -14,8 +14,8 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 public class McddnClientNeo {
     @SubscribeEvent
     static void init(FMLClientSetupEvent event) {
-        //for (Block block : McddnCommonClient.transparentBlocks) {
-            //ItemBlockRenderTypes.setRenderLayer(block, ChunkSectionLayer.CUTOUT);
-        //}
+        for (Block block : McddnCommonClient.transparentBlocks) {
+            ItemBlockRenderTypes.setRenderLayer(block, ChunkSectionLayer.CUTOUT);
+        }
     }
 }

@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.redupro.mcd_d_nether.block.custom.IvyBlock;
+import net.redupro.mcd_d_nether.registry.McddnBlocks;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.function.ToIntFunction;

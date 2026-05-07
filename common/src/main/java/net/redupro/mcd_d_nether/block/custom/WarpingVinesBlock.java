@@ -2,7 +2,7 @@ package net.redupro.mcd_d_nether.block.custom;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.WeepingVinesBlock;
-import net.redupro.mcd_d_nether.block.McddnBlocks;
+import net.redupro.mcd_d_nether.registry.McddnBlocks;
 import org.jspecify.annotations.NonNull;
 
 public class WarpingVinesBlock extends WeepingVinesBlock {

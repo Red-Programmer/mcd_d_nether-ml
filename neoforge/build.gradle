@@ -7,6 +7,7 @@ neoForge {
     version = neoforge_version
     // Automatically enable neoforge AccessTransformers if the file exists
     def at = project(':common').file('src/main/resources/META-INF/accesstransformer.cfg')
+    def generated = project(':common').file('src/main/generated/')
     if (at.exists()) {
         accessTransformers.from(at.absolutePath)
     }
@@ -27,7 +28,7 @@ neoForge {
 
             // DataGen can be run by - "./gradlew :neoforge:runData" in Terminal.
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
-            programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
+            programArguments.addAll '--mod', project.mod_id, '--all', '--output', generated.getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath(), '--existing', generated.getAbsolutePath()
         }
         server {
             server()
@@ -40,7 +41,7 @@ neoForge {
     }
 }
 
-sourceSets.main.resources { srcDir 'src/generated/resources' }
+sourceSets.main.resources { srcDir project(':common').file('src/main/generated/').getAbsolutePath() }
 
 // Implement mcgradleconventions loader attribute
 def loaderAttribute = Attribute.of('io.github.mcgradleconventions.loader', String)

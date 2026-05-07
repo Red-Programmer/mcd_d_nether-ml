@@ -1,9 +1,7 @@
 package net.redupro.mcd_d_nether;
 
 import net.minecraft.world.level.block.Block;
-import net.redupro.mcd_d_nether.block.McddnBlocks;
-
-import java.util.List;
+import net.redupro.mcd_d_nether.registry.McddnBlocks;
 
 public class McddnCommonClient {
     public static final Block[] transparentBlocks = {

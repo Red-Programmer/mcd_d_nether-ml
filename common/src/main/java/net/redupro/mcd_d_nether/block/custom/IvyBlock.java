@@ -25,7 +25,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.redupro.mcd_d_nether.block.Ivy;
-import net.redupro.mcd_d_nether.block.McddnBlocks;
+import net.redupro.mcd_d_nether.registry.McddnBlocks;
 import net.redupro.mcd_d_nether.block.enums.IvyPart;
 import org.jetbrains.annotations.Nullable;
 import org.jspecify.annotations.NonNull;
