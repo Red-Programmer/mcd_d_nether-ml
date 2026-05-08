@@ -51,16 +51,16 @@ public class FortressCapFeature extends Feature<RotatableFeatureConfig> {
     private void template1(WorldGenLevel level, BlockPos blockPos, Direction direction, RandomSource random) {
         placeBaseWall(level, blockPos, direction, random);
         placeWindow(level, blockPos, direction, Blocks.CHISELED_NETHER_BRICKS.defaultBlockState());
-        blockPos = blockPos.offset(direction.getOpposite().getUnitVec3i()).below();
+        blockPos = blockPos.offset(direction.getOpposite().getNormal()).below();
         if (random.nextFloat() < 0.5F) {
-            placeLamp(level, blockPos.above(5).offset(direction.getOpposite().getUnitVec3i()), direction);
+            placeLamp(level, blockPos.above(5).offset(direction.getOpposite().getNormal()), direction);
         }
-        blockPos = blockPos.offset(direction.getOpposite().getUnitVec3i());
+        blockPos = blockPos.offset(direction.getOpposite().getNormal());
         blockPos = blockPos.above();
-        this.setBlock(level, blockPos.above(3).offset(direction.getCounterClockWise().getUnitVec3i().multiply(2)), McddnBlocks.ORNATE_POLISHED_NETHERRACK.defaultBlockState());
-        this.setBlock(level, blockPos.above(3).offset(direction.getClockWise().getUnitVec3i().multiply(2)), McddnBlocks.ORNATE_POLISHED_NETHERRACK.defaultBlockState());
-        drawLine(level, blockPos.offset(direction.getCounterClockWise().getUnitVec3i().multiply(2)), McddnBlocks.NETHER_BRICK_PILLAR.defaultBlockState(), Direction.UP, 3);
-        drawLine(level, blockPos.offset(direction.getClockWise().getUnitVec3i().multiply(2)), McddnBlocks.NETHER_BRICK_PILLAR.defaultBlockState(), Direction.UP, 3);
+        this.setBlock(level, blockPos.above(3).offset(direction.getCounterClockWise().getNormal().multiply(2)), McddnBlocks.ORNATE_POLISHED_NETHERRACK.defaultBlockState());
+        this.setBlock(level, blockPos.above(3).offset(direction.getClockWise().getNormal().multiply(2)), McddnBlocks.ORNATE_POLISHED_NETHERRACK.defaultBlockState());
+        drawLine(level, blockPos.offset(direction.getCounterClockWise().getNormal().multiply(2)), McddnBlocks.NETHER_BRICK_PILLAR.defaultBlockState(), Direction.UP, 3);
+        drawLine(level, blockPos.offset(direction.getClockWise().getNormal().multiply(2)), McddnBlocks.NETHER_BRICK_PILLAR.defaultBlockState(), Direction.UP, 3);
     }
     private void template2(WorldGenLevel level, BlockPos blockPos, Direction direction, RandomSource random) {
         placeBaseWall(level, blockPos, direction, random);
@@ -105,7 +105,7 @@ public class FortressCapFeature extends Feature<RotatableFeatureConfig> {
 
     private void drawLine(WorldGenLevel level, BlockPos blockPos, BlockState blockState, Direction direction, int length) {
         for (var i = 0; i < length; i++) {
-            this.setBlock(level, blockPos.offset(direction.getUnitVec3i().multiply(i)), blockState);
+            this.setBlock(level, blockPos.offset(direction.getNormal().multiply(i)), blockState);
         }
     }
     private void placeHole(WorldGenLevel level, BlockPos blockPos, Direction direction, RandomSource random) {
@@ -129,11 +129,11 @@ public class FortressCapFeature extends Feature<RotatableFeatureConfig> {
     private void placeLamp(WorldGenLevel level, BlockPos blockPos, Direction direction) {
         BlockPos mutable = blockPos;
         this.setBlock(level, mutable, Blocks.BLACKSTONE.defaultBlockState());
-        mutable = mutable.offset(direction.getOpposite().getUnitVec3i());
-        BlockState wallState = Blocks.POLISHED_BLACKSTONE_BRICK_WALL.defaultBlockState().setValue(WallBlock.UP, false).setValue(WallBlock.NORTH, WallSide.LOW).setValue(WallBlock.SOUTH, WallSide.LOW);
+        mutable = mutable.offset(direction.getOpposite().getNormal());
+        BlockState wallState = Blocks.POLISHED_BLACKSTONE_BRICK_WALL.defaultBlockState().setValue(WallBlock.UP, false).setValue(WallBlock.NORTH_WALL, WallSide.LOW).setValue(WallBlock.SOUTH_WALL, WallSide.LOW);
         this.setBlock(level, mutable, direction.getAxis() == Direction.Axis.X ? wallState.rotate(Rotation.CLOCKWISE_90) : wallState);
-        mutable = mutable.offset(direction.getOpposite().getUnitVec3i());
-        wallState = wallState.setValue(WallBlock.UP, true).setValue(WallBlock.SOUTH, WallSide.NONE);
+        mutable = mutable.offset(direction.getOpposite().getNormal());
+        wallState = wallState.setValue(WallBlock.UP, true).setValue(WallBlock.SOUTH_WALL, WallSide.NONE);
         wallState = switch (direction) {
             case NORTH -> wallState;
             case SOUTH -> wallState.rotate(Rotation.CLOCKWISE_180);
@@ -141,7 +141,7 @@ public class FortressCapFeature extends Feature<RotatableFeatureConfig> {
             default -> wallState.rotate(Rotation.COUNTERCLOCKWISE_90);
         };
         this.setBlock(level, mutable, wallState);
-        this.setBlock(level, mutable.below(), Blocks.IRON_CHAIN.defaultBlockState());
+        this.setBlock(level, mutable.below(), Blocks.CHAIN.defaultBlockState());
         this.setBlock(level, mutable.below(2), Blocks.REDSTONE_LAMP.defaultBlockState().setValue(RedstoneLampBlock.LIT, true));
         this.setBlock(level, mutable.below(3), Blocks.POLISHED_BLACKSTONE_BUTTON.defaultBlockState().setValue(ButtonBlock.POWERED, true).setValue(FaceAttachedHorizontalDirectionalBlock.FACE, AttachFace.CEILING));
     }
@@ -155,27 +155,27 @@ public class FortressCapFeature extends Feature<RotatableFeatureConfig> {
         drawLine(level, blockPos.above(2), top, direction, 2);
     }
     private void placeBaseWall(WorldGenLevel level, BlockPos blockPos, Direction direction, RandomSource random){
-        BlockPos corner = blockPos.below(3).offset(direction.getOpposite().getUnitVec3i()).offset(direction.getCounterClockWise().getUnitVec3i().multiply(4));
+        BlockPos corner = blockPos.below(3).offset(direction.getOpposite().getNormal()).offset(direction.getCounterClockWise().getNormal().multiply(4));
         for (var j = 0; j < 16; j++) {
             BlockState blockState = j == 0 || j == 7 || j == 12 || j == 15 ? McddnBlocks.POLISHED_NETHERRACK.defaultBlockState() : Blocks.NETHER_BRICKS.defaultBlockState();
             drawLine(level, corner.above(j), blockState, direction.getClockWise(), 9);
         }
         for (var i = 0; i < 9; i++) {
-            if (!level.getBlockState(corner.above(24).offset(direction.getClockWise().getUnitVec3i().multiply(i))).isAir()) {
-                drawLine(level, corner.above(23).offset(direction.getClockWise().getUnitVec3i().multiply(i)), Blocks.NETHER_BRICKS.defaultBlockState(), Direction.DOWN, random.nextIntBetweenInclusive(1, 3));
+            if (!level.getBlockState(corner.above(24).offset(direction.getClockWise().getNormal().multiply(i))).isAir()) {
+                drawLine(level, corner.above(23).offset(direction.getClockWise().getNormal().multiply(i)), Blocks.NETHER_BRICKS.defaultBlockState(), Direction.DOWN, random.nextIntBetweenInclusive(1, 3));
             }
         }
-        drawLine(level, corner.above(12).offset(direction.getOpposite().getUnitVec3i()), McddnBlocks.ORNATE_NETHER_TILES.defaultBlockState(), direction.getClockWise(), 9);
-        corner = corner.offset(direction.getOpposite().getUnitVec3i()).above(2);
+        drawLine(level, corner.above(12).offset(direction.getOpposite().getNormal()), McddnBlocks.ORNATE_NETHER_TILES.defaultBlockState(), direction.getClockWise(), 9);
+        corner = corner.offset(direction.getOpposite().getNormal()).above(2);
         for (var j = 0; j < 5; j++) {
             BlockState blockState = j == 4 ? McddnBlocks.POLISHED_NETHERRACK.defaultBlockState() : Blocks.NETHER_BRICKS.defaultBlockState();
             drawLine(level, corner.above(j), blockState, direction.getClockWise(), 9);
         }
-        corner = corner.offset(direction.getOpposite().getUnitVec3i());
-        drawLine(level, corner.offset(direction.getClockWise().getUnitVec3i().multiply(2)), McddnBlocks.ORNATE_NETHER_TILES.defaultBlockState(), direction.getClockWise(), 5);
-        corner = corner.offset(direction.getOpposite().getUnitVec3i());
-        if (level.getBlockState(corner.offset(direction.getClockWise().getUnitVec3i().multiply(4))).is(McddnTags.Blocks.BLACKSTONE_TILES)) {
-            drawLine(level, corner.offset(direction.getClockWise().getUnitVec3i().multiply(3)), McddnBlocks.ORNATE_BLACKSTONE_TILES.defaultBlockState(), direction.getClockWise(), 3);
+        corner = corner.offset(direction.getOpposite().getNormal());
+        drawLine(level, corner.offset(direction.getClockWise().getNormal().multiply(2)), McddnBlocks.ORNATE_NETHER_TILES.defaultBlockState(), direction.getClockWise(), 5);
+        corner = corner.offset(direction.getOpposite().getNormal());
+        if (level.getBlockState(corner.offset(direction.getClockWise().getNormal().multiply(4))).is(McddnTags.Blocks.BLACKSTONE_TILES)) {
+            drawLine(level, corner.offset(direction.getClockWise().getNormal().multiply(3)), McddnBlocks.ORNATE_BLACKSTONE_TILES.defaultBlockState(), direction.getClockWise(), 3);
         }
         BlockState fence = Blocks.NETHER_BRICK_FENCE.defaultBlockState().setValue(CrossCollisionBlock.EAST, true).setValue(CrossCollisionBlock.WEST, true);
         fence = direction.getAxis() == Direction.Axis.X ? fence.rotate(Rotation.CLOCKWISE_90) : fence;

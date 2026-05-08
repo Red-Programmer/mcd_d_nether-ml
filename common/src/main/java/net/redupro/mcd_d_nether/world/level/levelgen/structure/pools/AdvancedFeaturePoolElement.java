@@ -1,11 +1,10 @@
 package net.redupro.mcd_d_nether.world.level.levelgen.structure.pools;
 
+import com.google.common.collect.Lists;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.*;
-import net.minecraft.data.worldgen.Pools;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.resources.Identifier;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.StructureManager;
 import net.minecraft.world.level.WorldGenLevel;
@@ -22,7 +21,7 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.LiquidSetting
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplateManager;
 import org.jetbrains.annotations.NotNull;
-import org.jspecify.annotations.Nullable;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
@@ -31,7 +30,6 @@ public class AdvancedFeaturePoolElement extends FeaturePoolElement {
             instance -> instance.group(PlacedFeature.CODEC.fieldOf("feature_north").forGetter(freeFeaturePoolElement -> freeFeaturePoolElement.feature_north), PlacedFeature.CODEC.fieldOf("feature_south").forGetter(freeFeaturePoolElement -> freeFeaturePoolElement.feature_south), PlacedFeature.CODEC.fieldOf("feature_east").forGetter(freeFeaturePoolElement -> freeFeaturePoolElement.feature_east), PlacedFeature.CODEC.fieldOf("feature_west").forGetter(freeFeaturePoolElement -> freeFeaturePoolElement.feature_west), projectionCodec())
                     .apply(instance, AdvancedFeaturePoolElement::new)
     );
-    private static final Identifier DEFAULT_JIGSAW_NAME = Identifier.withDefaultNamespace("wing");
     private Holder<PlacedFeature> feature_north;
     private Holder<PlacedFeature> feature_south;
     private Holder<PlacedFeature> feature_east;
@@ -48,27 +46,27 @@ public class AdvancedFeaturePoolElement extends FeaturePoolElement {
     }
     private CompoundTag fillDefaultJigsawNBT() {
         CompoundTag compoundTag = new CompoundTag();
-        compoundTag.store("name", Identifier.CODEC, DEFAULT_JIGSAW_NAME);
+        compoundTag.putString("name", "minecraft:wing");
         compoundTag.putString("final_state", "minecraft:air");
-        compoundTag.store("pool", JigsawBlockEntity.POOL_CODEC, Pools.EMPTY);
-        compoundTag.store("target", Identifier.CODEC, JigsawBlockEntity.EMPTY_ID);
-        compoundTag.store("joint", JigsawBlockEntity.JointType.CODEC, JigsawBlockEntity.JointType.ROLLABLE);
+        compoundTag.putString("pool", "minecraft:empty");
+        compoundTag.putString("target", "minecraft:empty");
+        compoundTag.putString("joint", JigsawBlockEntity.JointType.ROLLABLE.getSerializedName());
         return compoundTag;
     }
 
     @Override
-    public @NotNull List<StructureTemplate.JigsawBlockInfo> getShuffledJigsawBlocks(
+    public @NotNull List<StructureTemplate.StructureBlockInfo> getShuffledJigsawBlocks(
             StructureTemplateManager structureTemplateManager, BlockPos blockPos, Rotation rotation, RandomSource randomSource
     ) {
-        return List.of(
-                StructureTemplate.JigsawBlockInfo.of(
-                        new StructureTemplate.StructureBlockInfo(
-                                blockPos,
-                                Blocks.JIGSAW.defaultBlockState().setValue(JigsawBlock.ORIENTATION, FrontAndTop.fromFrontAndTop(rotation.rotate(Direction.NORTH), Direction.UP)),
-                                this.defaultJigsawNBT
-                        )
+        List<StructureTemplate.StructureBlockInfo> list = Lists.<StructureTemplate.StructureBlockInfo>newArrayList();
+        list.add(
+                new StructureTemplate.StructureBlockInfo(
+                        blockPos,
+                        Blocks.JIGSAW.defaultBlockState().setValue(JigsawBlock.ORIENTATION, FrontAndTop.fromFrontAndTop(rotation.rotate(Direction.NORTH), Direction.UP)),
+                        this.defaultJigsawNBT
                 )
         );
+        return list;
     }
 
     @Override

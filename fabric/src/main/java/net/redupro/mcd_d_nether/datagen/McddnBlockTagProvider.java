@@ -15,23 +15,23 @@ public class McddnBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider wrapperLookup) {
-        valueLookupBuilder(BlockTags.FENCES)
+        getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(McddnBlocks.DARK_NETHER_BRICK_FENCE)
                 .add(McddnBlocks.BONE_FENCE);
-        valueLookupBuilder(BlockTags.WALLS)
+        getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(McddnBlocks.DARK_NETHER_BRICK_WALL);
-        valueLookupBuilder(BlockTags.CLIMBABLE)
+        getOrCreateTagBuilder(BlockTags.CLIMBABLE)
                 .add(McddnBlocks.CRIMSON_IVY)
                 .add(McddnBlocks.WARPING_VINES)
                 .add(McddnBlocks.WARPING_VINES_PLANT);
-        valueLookupBuilder(BlockTags.MINEABLE_WITH_SHOVEL)
+        getOrCreateTagBuilder(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(McddnBlocks.ASH);
-        valueLookupBuilder(BlockTags.GUARDED_BY_PIGLINS).add(McddnBlocks.GILDED_BASALT_TILES);
-        valueLookupBuilder(BlockTags.INFINIBURN_NETHER).add(McddnBlocks.ROUGH_NETHERRACK);
-        valueLookupBuilder(BlockTags.INFINIBURN_END).add(McddnBlocks.ROUGH_NETHERRACK);
-        valueLookupBuilder(BlockTags.INFINIBURN_OVERWORLD).add(McddnBlocks.ROUGH_NETHERRACK);
-        valueLookupBuilder(BlockTags.NETHER_CARVER_REPLACEABLES).add(McddnBlocks.ROUGH_NETHERRACK);
-        valueLookupBuilder(BlockTags.MINEABLE_WITH_PICKAXE)
+        getOrCreateTagBuilder(BlockTags.GUARDED_BY_PIGLINS).add(McddnBlocks.GILDED_BASALT_TILES);
+        getOrCreateTagBuilder(BlockTags.INFINIBURN_NETHER).add(McddnBlocks.ROUGH_NETHERRACK);
+        getOrCreateTagBuilder(BlockTags.INFINIBURN_END).add(McddnBlocks.ROUGH_NETHERRACK);
+        getOrCreateTagBuilder(BlockTags.INFINIBURN_OVERWORLD).add(McddnBlocks.ROUGH_NETHERRACK);
+        getOrCreateTagBuilder(BlockTags.NETHER_CARVER_REPLACEABLES).add(McddnBlocks.ROUGH_NETHERRACK);
+        getOrCreateTagBuilder(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(McddnBlocks.BLACKSTONE_TILES)
                 .add(McddnBlocks.BLACKSTONE_TILE_SLAB)
                 .add(McddnBlocks.BLACKSTONE_TILES_STAIRS)
@@ -78,13 +78,13 @@ public class McddnBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(McddnBlocks.BASALT_TILE_STAIRS)
                 .add(McddnBlocks.GILDED_BASALT_TILES)
                 .add(McddnBlocks.SPALLING_BASALT_TILES);
-        valueLookupBuilder(BlockTags.MINEABLE_WITH_HOE)
+        getOrCreateTagBuilder(BlockTags.MINEABLE_WITH_HOE)
                 .add(McddnBlocks.WARPED_WART_FLUFF)
                 .add(McddnBlocks.NETHER_WART_FLUFF)
                 .add(McddnBlocks.MIDNIGHT_WART_BLOCK)
                 .add(McddnBlocks.MIDNIGHT_MOULD)
                 .add(McddnBlocks.MOONLIGHT_MOULD);
-        valueLookupBuilder(BlockTags.MINEABLE_WITH_AXE)
+        getOrCreateTagBuilder(BlockTags.MINEABLE_WITH_AXE)
                 .add(McddnBlocks.WARPED_TRUNK);
     }
 }

@@ -25,7 +25,7 @@ public class BigFortressCapFeature extends Feature<RotatableFeatureConfig> {
         boolean patchMode = level.getBlockState(blockPos.below()).is(McddnTags.Blocks.BLACKSTONE_TILES) && !bigNeighbor;
         Direction direction = featurePlaceContext.config().direction;
 
-        corner = blockPos.above(9).offset(direction.getCounterClockWise().getUnitVec3i().multiply(4));
+        corner = blockPos.above(9).offset(direction.getCounterClockWise().getNormal().multiply(4));
         if (patchMode) {
             for (var j = 0; j < 4; j++) {
                 BlockState blockState = j == 0 || j == 3 ? McddnBlocks.POLISHED_NETHERRACK.defaultBlockState() : Blocks.NETHER_BRICKS.defaultBlockState();
@@ -34,15 +34,15 @@ public class BigFortressCapFeature extends Feature<RotatableFeatureConfig> {
             drawLine(level, corner.below(), Blocks.NETHER_BRICKS.defaultBlockState(), direction.getClockWise(), 9);
             drawLine(level, corner.below(2), McddnBlocks.POLISHED_NETHERRACK.defaultBlockState(), direction.getClockWise(), 9);
             drawLine(level, corner.below(9), McddnBlocks.NETHER_BRICK_PILLAR.defaultBlockState(), Direction.UP, 7);
-            drawLine(level, corner.below(9).offset(direction.getClockWise().getUnitVec3i().multiply(8)), McddnBlocks.NETHER_BRICK_PILLAR.defaultBlockState(), Direction.UP, 7);
+            drawLine(level, corner.below(9).offset(direction.getClockWise().getNormal().multiply(8)), McddnBlocks.NETHER_BRICK_PILLAR.defaultBlockState(), Direction.UP, 7);
             this.setBlock(level, corner.below(2), McddnBlocks.ORNATE_POLISHED_NETHERRACK.defaultBlockState());
-            this.setBlock(level, corner.below(2).offset(direction.getClockWise().getUnitVec3i().multiply(8)), McddnBlocks.ORNATE_POLISHED_NETHERRACK.defaultBlockState());
-            this.setBlock(level, corner.below(2).offset(direction.getClockWise().getUnitVec3i().multiply(4)), Blocks.CHISELED_NETHER_BRICKS.defaultBlockState());
+            this.setBlock(level, corner.below(2).offset(direction.getClockWise().getNormal().multiply(8)), McddnBlocks.ORNATE_POLISHED_NETHERRACK.defaultBlockState());
+            this.setBlock(level, corner.below(2).offset(direction.getClockWise().getNormal().multiply(4)), Blocks.CHISELED_NETHER_BRICKS.defaultBlockState());
         } else if (!bigNeighbor) {
-            corner = corner.below(10).offset(direction.getOpposite().getUnitVec3i());
+            corner = corner.below(10).offset(direction.getOpposite().getNormal());
             drawLine(level, corner, McddnBlocks.POLISHED_NETHERRACK.defaultBlockState(), direction.getClockWise(), 9);
-            corner = corner.above().offset(direction.getCounterClockWise().getUnitVec3i().multiply(2));
-            if (level.getBlockState(blockPos.below(2).offset(direction.getOpposite().getUnitVec3i())).is(Blocks.CHISELED_NETHER_BRICKS)) {
+            corner = corner.above().offset(direction.getCounterClockWise().getNormal().multiply(2));
+            if (level.getBlockState(blockPos.below(2).offset(direction.getOpposite().getNormal())).is(Blocks.CHISELED_NETHER_BRICKS)) {
                 for (var j = 0; j < 5; j++) {
                     BlockState blockState = j == 4 ? McddnBlocks.POLISHED_NETHERRACK.defaultBlockState() : Blocks.NETHER_BRICKS.defaultBlockState();
                     drawLine(level, corner.above(j), blockState, direction.getClockWise(), 15);
@@ -54,7 +54,7 @@ public class BigFortressCapFeature extends Feature<RotatableFeatureConfig> {
 
     private void drawLine(WorldGenLevel level, BlockPos blockPos, BlockState blockState, Direction direction, int length) {
         for (var i = 0; i < length; i++) {
-            this.setBlock(level, blockPos.offset(direction.getUnitVec3i().multiply(i)), blockState);
+            this.setBlock(level, blockPos.offset(direction.getNormal().multiply(i)), blockState);
         }
     }
 }

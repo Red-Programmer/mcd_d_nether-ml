@@ -3,8 +3,8 @@ package net.redupro.mcd_d_nether.registry;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -18,8 +18,6 @@ import net.redupro.mcd_d_nether.block.custom.*;
 import net.redupro.mcd_d_nether.item.McddnFoodComponents;
 import java.util.function.Function;
 
-import static net.minecraft.world.level.block.Blocks.flowerPotProperties;
-
 public class McddnBlocks {
     public static final Block WARPED_BLOSSOM = register(
             "warped_blossom",
@@ -29,7 +27,8 @@ public class McddnBlocks {
     );
     public static final Block POTTED_WARPED_BLOSSOM = register(
             "potted_warped_blossom",
-            settings -> new FlowerPotBlock(WARPED_BLOSSOM, settings), flowerPotProperties(),
+            settings -> new FlowerPotBlock(WARPED_BLOSSOM, settings),
+            BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY),
             false
     );
     public static final Block CRIMSON_SPROUTS = register(
@@ -40,7 +39,8 @@ public class McddnBlocks {
     );
     public static final Block POTTED_CRIMSON_SPROUTS = register(
             "potted_crimson_sprouts",
-            settings -> new FlowerPotBlock(CRIMSON_SPROUTS, settings), flowerPotProperties(),
+            settings -> new FlowerPotBlock(CRIMSON_SPROUTS, settings),
+            BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY),
             false
     );
     public static final Block WARPED_WART_FLUFF = register(
@@ -534,7 +534,7 @@ public class McddnBlocks {
     public static final Block NETHERITE_CHAIN = register(
             "netherite_chain",
             NetheriteChainBlock::new,
-            BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_CHAIN).sound(SoundType.NETHERITE_BLOCK),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.CHAIN).sound(SoundType.NETHERITE_BLOCK),
             true
     );
     public static final Block NETHERITE_SPIKE = register(
@@ -633,11 +633,11 @@ public class McddnBlocks {
 
     private static Block register(String name, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, boolean shouldRegisterItem) {
         ResourceKey<Block> blockKey = keyOfBlock(name);
-        Block block = blockFactory.apply(settings.setId(blockKey));
+        Block block = blockFactory.apply(settings);
         if (shouldRegisterItem) {
             ResourceKey<Item> itemKey = keyOfItem(name);
             BlockItem blockItem;
-            blockItem = new BlockItem(block, new Item.Properties().setId(itemKey));
+            blockItem = new BlockItem(block, new Item.Properties());
             Registry.register(BuiltInRegistries.ITEM, itemKey, blockItem);
         }
 
@@ -645,11 +645,11 @@ public class McddnBlocks {
     }
     private static Block register(String name, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, boolean shouldRegisterItem, FoodProperties food) {
         ResourceKey<Block> blockKey = keyOfBlock(name);
-        Block block = blockFactory.apply(settings.setId(blockKey));
+        Block block = blockFactory.apply(settings);
         if (shouldRegisterItem) {
             ResourceKey<Item> itemKey = keyOfItem(name);
             BlockItem blockItem;
-            blockItem = new BlockItem(block, new Item.Properties().setId(itemKey).food(food));
+            blockItem = new BlockItem(block, new Item.Properties().food(food));
             Registry.register(BuiltInRegistries.ITEM, itemKey, blockItem);
         }
 
@@ -657,20 +657,20 @@ public class McddnBlocks {
     }
     private static Block registerStairsBlock(String name, Block base, boolean shouldRegisterItem) {
         ResourceKey<Block> blockKey = keyOfBlock(name);
-        StairBlock block = new StairBlock(base.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(base).setId(blockKey));
+        StairBlock block = new StairBlock(base.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(base));
         if (shouldRegisterItem) {
             ResourceKey<Item> itemKey = keyOfItem(name);
-            BlockItem blockItem = new BlockItem(block, new Item.Properties().setId(itemKey));
+            BlockItem blockItem = new BlockItem(block, new Item.Properties());
             Registry.register(BuiltInRegistries.ITEM, itemKey, blockItem);
         }
 
         return Registry.register(BuiltInRegistries.BLOCK, blockKey, block);
     }
     private static ResourceKey<Block> keyOfBlock(String name) {
-        return ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Constants.MOD_ID, name));
+        return ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, name));
     }
     private static ResourceKey<Item> keyOfItem(String name) {
-        return ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Constants.MOD_ID, name));
+        return ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, name));
     }
     public static void init() {}
 }

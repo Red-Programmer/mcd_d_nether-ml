@@ -12,7 +12,6 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.ScheduledTickAccess;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.BonemealableBlock;
@@ -27,8 +26,8 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.redupro.mcd_d_nether.block.Ivy;
 import net.redupro.mcd_d_nether.registry.McddnBlocks;
 import net.redupro.mcd_d_nether.block.enums.IvyPart;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.jspecify.annotations.NonNull;
 
 public class IvyBlock extends Block implements BonemealableBlock {
     public static final EnumProperty<IvyPart> IVY_PART = EnumProperty.create("ivy_part", IvyPart.class);
@@ -74,13 +73,11 @@ public class IvyBlock extends Block implements BonemealableBlock {
     @Override
     protected BlockState updateShape(
             BlockState state,
-            LevelReader world,
-            ScheduledTickAccess tickView,
-            BlockPos pos,
             Direction direction,
-            BlockPos neighborPos,
             BlockState neighborState,
-            RandomSource random
+            LevelAccessor world,
+            BlockPos pos,
+            BlockPos neighborPos
     ) {
         Direction facing = state.getValue(FACING);
         if ((state.getValue(IVY_PART).equals(IvyPart.LEFTB) || state.getValue(IVY_PART).equals(IvyPart.RIGHTB)) && !neighborState.is(this)) {
@@ -170,7 +167,7 @@ public class IvyBlock extends Block implements BonemealableBlock {
     }
 
     @Override
-    protected @NonNull InteractionResult useWithoutItem(BlockState state, Level world, BlockPos pos, Player player, BlockHitResult hit) {
+    protected @NotNull InteractionResult useWithoutItem(BlockState state, Level world, BlockPos pos, Player player, BlockHitResult hit) {
         return Ivy.pickFruit(player, state, world, pos);
     }
 

@@ -1,7 +1,7 @@
 package net.redupro.mcd_d_nether;
 
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.PackType;
 import net.minecraft.server.packs.repository.Pack;
 import net.minecraft.server.packs.repository.PackSource;
@@ -27,7 +27,7 @@ public class McddnNeo {
         McddnCommon.init();
     }
     private void addPacks(AddPackFindersEvent event) {
-        event.addPackFinders(Identifier.parse("mcd_d_nether:resourcepacks/custom_fortress"), PackType.SERVER_DATA, Component.translatable("Custom Nether Fortress"), PackSource.BUILT_IN, false, Pack.Position.TOP);
+        event.addPackFinders(ResourceLocation.parse("mcd_d_nether:resourcepacks/custom_fortress"), PackType.SERVER_DATA, Component.translatable("Custom Nether Fortress"), PackSource.BUILT_IN, false, Pack.Position.TOP);
     }
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {

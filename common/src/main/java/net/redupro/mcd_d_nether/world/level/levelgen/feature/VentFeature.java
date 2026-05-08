@@ -52,7 +52,7 @@ public class VentFeature extends Feature<VentFeatureConfig> {
             BlockPos.MutableBlockPos mutable = matchTerrain(level, blockPos);
             int steepness = max(0, blockPos.getY() - mutable.getY());
             steepness = steepness > 12 ? 0 : steepness;
-            if(mutable.getY() >= 32 && mutable.getY() < level.getMaxY() - 10) {
+            if(mutable.getY() >= 32 && mutable.getY() < level.getHeight() - 10) {
                 if (sample < 0.3F) {
                     this.setBlock(level, mutable.above((int) height), Blocks.AIR.defaultBlockState());
                     this.setBlock(level, mutable.below((int) -(height-1)), fill);
@@ -87,7 +87,7 @@ public class VentFeature extends Feature<VentFeatureConfig> {
     }
     private BlockPos.MutableBlockPos matchTerrain(WorldGenLevel level, BlockPos blockPos) {
         BlockPos.MutableBlockPos mutable = blockPos.mutable();
-        while(level.getBlockState(mutable.above()).is(McddnTags.Blocks.VENT_REPLACEABLES) && mutable.getY() < level.getMaxY() - 10) {
+        while(level.getBlockState(mutable.above()).is(McddnTags.Blocks.VENT_REPLACEABLES) && mutable.getY() < level.getHeight() - 10) {
             replaceNeighborTerrain(level, mutable, Blocks.BLACKSTONE.defaultBlockState());
             mutable = mutable.move(Direction.UP);
         }

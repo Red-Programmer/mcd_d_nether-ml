@@ -1,7 +1,7 @@
 package net.redupro.mcd_d_nether;
 
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.chunk.ChunkSectionLayer;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -15,7 +15,7 @@ public class McddnClientNeo {
     @SubscribeEvent
     static void init(FMLClientSetupEvent event) {
         for (Block block : McddnCommonClient.transparentBlocks) {
-            ItemBlockRenderTypes.setRenderLayer(block, ChunkSectionLayer.CUTOUT);
+            ItemBlockRenderTypes.setRenderLayer(block, RenderType.CUTOUT);
         }
     }
 }

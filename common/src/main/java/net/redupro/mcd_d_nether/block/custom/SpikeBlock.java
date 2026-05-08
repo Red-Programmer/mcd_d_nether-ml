@@ -2,13 +2,9 @@ package net.redupro.mcd_d_nether.block.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.ScheduledTickAccess;
+import net.minecraft.world.level.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -50,20 +46,18 @@ public class SpikeBlock extends Block {
     @Override
     protected BlockState updateShape(
             BlockState state,
-            LevelReader world,
-            ScheduledTickAccess tickView,
-            BlockPos pos,
             Direction direction,
-            BlockPos neighborPos,
             BlockState neighborState,
-            RandomSource random
+            LevelAccessor world,
+            BlockPos pos,
+            BlockPos neighborPos
     ) {
         return this.defaultBlockState().setValue(UP, world.getBlockState(pos.above()).getBlock() instanceof SpikeBlock).setValue(DOWN, world.getBlockState(pos.below()).getBlock() instanceof SpikeBlock);
     }
 
     @Override
-    public void fallOn(Level level, BlockState blockState, BlockPos blockPos, Entity entity, double d) {
-        entity.causeFallDamage(d + 2.5, 2.0F, level.damageSources().stalagmite());
+    public void fallOn(Level level, BlockState blockState, BlockPos blockPos, Entity entity, float f) {
+        entity.causeFallDamage((float) (f + 2.5), 2.0F, level.damageSources().stalagmite());
     }
 
     @Override

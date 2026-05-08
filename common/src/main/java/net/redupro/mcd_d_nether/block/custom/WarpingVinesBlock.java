@@ -3,7 +3,7 @@ package net.redupro.mcd_d_nether.block.custom;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.WeepingVinesBlock;
 import net.redupro.mcd_d_nether.registry.McddnBlocks;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 public class WarpingVinesBlock extends WeepingVinesBlock {
     public WarpingVinesBlock(Properties properties) {
@@ -11,7 +11,7 @@ public class WarpingVinesBlock extends WeepingVinesBlock {
     }
 
     @Override
-    protected @NonNull Block getBodyBlock() {
+    protected @NotNull Block getBodyBlock() {
         return McddnBlocks.WARPING_VINES_PLANT;
     }
 }

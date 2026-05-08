@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.11",
+	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
 	"textures": {
 		"2": "mcd_d_nether:block/bone_fence_side",
@@ -8,11 +8,11 @@
 	"elements": [
 		{
 			"from": [8, 5, 0],
-			"to": [16, 10, 0],
-			"rotation": {"x": 0, "y": -90, "z": 0, "origin": [8, 5, 0]},
+			"to": [8, 10, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 5, 0]},
 			"faces": {
-				"north": {"uv": [0, 6, 8, 11], "texture": "#2"},
-				"south": {"uv": [8, 6, 16, 11], "texture": "#2"}
+				"east": {"uv": [0, 6, 8, 11], "texture": "#2"},
+				"west": {"uv": [8, 6, 16, 11], "texture": "#2"}
 			}
 		}
 	]

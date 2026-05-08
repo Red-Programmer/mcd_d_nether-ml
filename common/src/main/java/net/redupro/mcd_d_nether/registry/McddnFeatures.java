@@ -2,7 +2,7 @@ package net.redupro.mcd_d_nether.registry;
 
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.SimpleRandomFeatureConfiguration;
@@ -25,7 +25,7 @@ public class McddnFeatures {
     private static <V, T extends V> T register(String name, T feature) {
         return Registry.register(
                 (Registry<V>) BuiltInRegistries.FEATURE,
-                Identifier.fromNamespaceAndPath(Constants.MOD_ID, name),
+                ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, name),
                 feature
         );
     }

@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/template_bars_side_alt",
+  "parent": "minecraft:block/iron_bars_side_alt",
   "textures": {
+    "particle": "mcd_d_nether:block/netherite_bars",
     "bars": "mcd_d_nether:block/netherite_bars",
     "edge": "mcd_d_nether:block/netherite_bars"
   }

@@ -1,7 +1,7 @@
 package net.redupro.mcd_d_nether.util;
 
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 import net.redupro.mcd_d_nether.Constants;
@@ -14,7 +14,7 @@ public class McddnTags {
         public static final TagKey<Block> VENT_REPLACEABLES = createTag("vent_replaceables");
 
         private static TagKey<Block> createTag(String id) {
-            return TagKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Constants.MOD_ID, id));
+            return TagKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, id));
         }
     }
 }
