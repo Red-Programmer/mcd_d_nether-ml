@@ -1,7 +1,7 @@
 package net.redupro.mcd_d_nether.datagen;
 
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootSubProvider;
 import net.minecraft.advancements.criterion.StatePropertiesPredicate;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.world.item.Items;
@@ -19,8 +19,8 @@ import net.redupro.mcd_d_nether.block.enums.Quadrant;
 
 import java.util.concurrent.CompletableFuture;
 
-public class McddnLootTableProvider extends FabricBlockLootTableProvider {
-    public McddnLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<HolderLookup.Provider> registryLookup) {
+public class McddnLootTableProvider extends FabricBlockLootSubProvider {
+    public McddnLootTableProvider(FabricPackOutput dataOutput, CompletableFuture<HolderLookup.Provider> registryLookup) {
         super(dataOutput, registryLookup);
     }
 

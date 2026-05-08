@@ -1,15 +1,15 @@
 package net.redupro.mcd_d_nether.datagen;
 
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.tags.BlockTags;
 import net.redupro.mcd_d_nether.registry.McddnBlocks;
 
 import java.util.concurrent.CompletableFuture;
 
-public class McddnBlockTagProvider extends FabricTagProvider.BlockTagProvider {
-    public McddnBlockTagProvider(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
+public class McddnBlockTagProvider extends FabricTagsProvider.BlockTagsProvider {
+    public McddnBlockTagProvider(FabricPackOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
         super(output, registriesFuture);
     }
 

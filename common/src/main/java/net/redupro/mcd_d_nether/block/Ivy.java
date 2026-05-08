@@ -24,7 +24,7 @@ public interface Ivy {
     static InteractionResult pickFruit(@Nullable Entity picker, BlockState state, Level world, BlockPos pos) {
         if ((Boolean)state.getValue(FRUIT)) {
             Block.popResource(world, pos, new ItemStack(McddnBlocks.CRIMSON_IVY, 1));
-            float f = Mth.randomBetween(world.random, 0.8F, 1.2F);
+            float f = Mth.randomBetween(world.getRandom(), 0.8F, 1.2F);
             world.playSound(null, pos, SoundEvents.CAVE_VINES_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, f);
             BlockState blockState = state.setValue(FRUIT, false);
             world.setBlock(pos, blockState, Block.UPDATE_CLIENTS);
@@ -33,7 +33,7 @@ public interface Ivy {
         } else if ((Boolean)world.getBlockState(pos.above()).is(state.getBlock())) {
             if ((Boolean)world.getBlockState(pos.above()).getValue(IvyBlock.FRUIT)) {
                 Block.popResource(world, pos.above(), new ItemStack(McddnBlocks.CRIMSON_IVY, 1));
-                float f = Mth.randomBetween(world.random, 0.8F, 1.2F);
+                float f = Mth.randomBetween(world.getRandom(), 0.8F, 1.2F);
                 world.playSound(null, pos, SoundEvents.CAVE_VINES_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, f);
                 BlockState blockState = state.setValue(FRUIT, false);
                 world.setBlock(pos.above(), blockState, Block.UPDATE_CLIENTS);

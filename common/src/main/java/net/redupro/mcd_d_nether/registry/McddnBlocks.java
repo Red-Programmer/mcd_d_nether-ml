@@ -5,6 +5,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -18,18 +19,16 @@ import net.redupro.mcd_d_nether.block.custom.*;
 import net.redupro.mcd_d_nether.item.McddnFoodComponents;
 import java.util.function.Function;
 
-import static net.minecraft.world.level.block.Blocks.flowerPotProperties;
-
 public class McddnBlocks {
     public static final Block WARPED_BLOSSOM = register(
             "warped_blossom",
-            RootsBlock::new,
+            p -> new NetherRootsBlock(BlockTags.SUPPORTS_WARPED_ROOTS, p),
             BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_ROOTS),
             true
     );
     public static final Block POTTED_WARPED_BLOSSOM = register(
             "potted_warped_blossom",
-            settings -> new FlowerPotBlock(WARPED_BLOSSOM, settings), flowerPotProperties(),
+            settings -> new FlowerPotBlock(WARPED_BLOSSOM, settings), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY),
             false
     );
     public static final Block CRIMSON_SPROUTS = register(
@@ -40,7 +39,7 @@ public class McddnBlocks {
     );
     public static final Block POTTED_CRIMSON_SPROUTS = register(
             "potted_crimson_sprouts",
-            settings -> new FlowerPotBlock(CRIMSON_SPROUTS, settings), flowerPotProperties(),
+            settings -> new FlowerPotBlock(CRIMSON_SPROUTS, settings), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY),
             false
     );
     public static final Block WARPED_WART_FLUFF = register(
@@ -87,31 +86,31 @@ public class McddnBlocks {
     );
     public static final Block SHY_SUCCULENT = register(
             "shy_succulent",
-            SucculentBlock::new,
+            p -> new SucculentBlock(BlockTags.SUPPORTS_WARPED_ROOTS, p),
             BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_CYAN).instabreak().sound(SoundType.FUNGUS).pushReaction(PushReaction.DESTROY).dynamicShape(),
             true
     );
     public static final Block MOONLIGHT_MILDEW = register(
             "moonlight_mildew",
-            MildewBlock::new,
+            p -> new MildewBlock(BlockTags.SUPPORTS_WARPED_ROOTS, p),
             BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_ROOTS),
             true
     );
     public static final Block MIDNIGHT_MILDEW = register(
             "midnight_mildew",
-            MildewBlock::new,
+            p -> new MildewBlock(BlockTags.SUPPORTS_WARPED_ROOTS, p),
             BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_ROOTS),
             true
     );
     public static final Block FLUORESCENT_FLOWER = register(
             "fluorescent_flower",
-            RootsBlock::new,
+            p -> new NetherRootsBlock(BlockTags.SUPPORTS_WARPED_ROOTS, p),
             BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_ROOTS),
             true
     );
     public static final Block FLUORESCENT_FIG = register(
             "fluorescent_fig",
-            RootsBlock::new,
+            p -> new NetherRootsBlock(BlockTags.SUPPORTS_WARPED_ROOTS, p),
             BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_FUNGUS),
             true
     );
@@ -123,25 +122,25 @@ public class McddnBlocks {
     );
     public static final Block FEELER_FLOWER = register(
             "feeler_flower",
-            RootsBlock::new,
+            p -> new NetherRootsBlock(BlockTags.SUPPORTS_WARPED_ROOTS, p),
             BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_ROOTS),
             true
     );
     public static final Block FROG_FLOWER = register(
             "frog_flower",
-            RootsBlock::new,
+            p -> new NetherRootsBlock(BlockTags.SUPPORTS_WARPED_ROOTS, p),
             BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_FUNGUS),
             true
     );
     public static final Block FUNGAL_FERN = register(
             "fungal_fern",
-            RootsBlock::new,
+            p -> new NetherRootsBlock(BlockTags.SUPPORTS_WARPED_ROOTS, p),
             BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_FUNGUS),
             true
     );
     public static final Block SIPHON_STALK = register(
             "siphon_stalk",
-            RootsBlock::new,
+            p -> new NetherRootsBlock(BlockTags.SUPPORTS_WARPED_ROOTS, p),
             BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_FUNGUS),
             true
     );
@@ -153,13 +152,13 @@ public class McddnBlocks {
     );
     public static final Block BLOODTHORN_BLOSSOM = register(
             "bloodthorn_blossom",
-            BloodthornBlossomBlock::new,
+            p -> new BloodthornBlossomBlock(BlockTags.SUPPORTS_WARPED_ROOTS, p),
             BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_ROOTS),
             true
     );
     public static final Block FLUORESCENT_FLOWER_INV = register(
             "fluorescent_flower_inv",
-            RootsBlock::new,
+            p -> new NetherRootsBlock(BlockTags.SUPPORTS_WARPED_ROOTS, p),
             BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_ROOTS),
             true
     );
@@ -171,13 +170,13 @@ public class McddnBlocks {
     );
     public static final Block OBSERVER_ORCHIDS = register(
             "observer_orchids",
-            RootsBlock::new,
+            p -> new NetherRootsBlock(BlockTags.SUPPORTS_WARPED_ROOTS, p),
             BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_ROOTS).lightLevel(state -> 7),
             true
     );
     public static final Block STOUTSHROOM = register(
             "stoutshroom",
-            RootsBlock::new,
+            p -> new NetherRootsBlock(BlockTags.SUPPORTS_WARPED_ROOTS, p),
             BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_FUNGUS),
             true
     );
@@ -220,7 +219,7 @@ public class McddnBlocks {
     );
     public static final Block SPORANGIUM = register(
             "sporangium",
-            RootsBlock::new,
+            p -> new NetherRootsBlock(BlockTags.SUPPORTS_WARPED_ROOTS, p),
             BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_ROOTS),
             true
     );

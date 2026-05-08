@@ -26,7 +26,7 @@ public class VentFeature extends Feature<VentFeatureConfig> {
         RandomSource random = featurePlaceContext.random();
         BlockPos blockPos = featurePlaceContext.origin();
         WorldGenLevel level = featurePlaceContext.level();
-        BlockState fill = featurePlaceContext.config().fill.getState(random, blockPos);
+        BlockState fill = featurePlaceContext.config().fill.getState(level, random, blockPos);
         float height = featurePlaceContext.config().height;
         float depth = featurePlaceContext.config().depth;
         float radius = nextFloatBetweenInclusive(featurePlaceContext.config().minRadius, featurePlaceContext.config().maxRadius, random);

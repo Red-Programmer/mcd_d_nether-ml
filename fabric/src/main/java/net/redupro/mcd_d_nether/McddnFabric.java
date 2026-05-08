@@ -2,7 +2,7 @@ package net.redupro.mcd_d_nether;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.fabricmc.fabric.api.resource.v1.ResourceLoader;
 import net.fabricmc.fabric.api.resource.v1.pack.PackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
@@ -21,12 +21,12 @@ public class McddnFabric implements ModInitializer {
     }
 
     private void addCreative() {
-        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
             for (Block block: McddnBlocks.buildingBlocks) {
                 fabricItemGroupEntries.accept(block);
             }
         });
-        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.NATURAL_BLOCKS).register(fabricItemGroupEntries -> {
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.NATURAL_BLOCKS).register(fabricItemGroupEntries -> {
             for (Block block: McddnBlocks.naturalBlocks) {
                 fabricItemGroupEntries.accept(block);
             }

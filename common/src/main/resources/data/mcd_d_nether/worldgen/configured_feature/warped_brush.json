@@ -1,0 +1,8 @@
+{
+  "type": "mcd_d_nether:advanced_block",
+  "config": {
+    "quad_state": {
+      "Name": "mcd_d_nether:teal_brush"
+    }
+  }
+}

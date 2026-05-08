@@ -43,7 +43,7 @@ public class CrimsonIvyFeature extends Feature<NoneFeatureConfiguration> {
             if (directions.size() == 1) {
                 facing = directions.getFirst();
                 if (world.getBlockState(blockPos.relative(facing.getOpposite())).isFaceSturdy(world, blockPos.relative(facing.getOpposite()), facing)) {
-                    if (new ChunkPos(blockPos).equals(new ChunkPos(blockPos.relative(facing.getOpposite())))) {
+                    if (ChunkPos.containing(blockPos).equals(ChunkPos.containing(blockPos.relative(facing.getOpposite())))) {
                         return IvyBlock.growAt(world, blockPos, facing, random);
                     }
                 }

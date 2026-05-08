@@ -96,7 +96,7 @@ public class GlobBlock extends Block {
     }
 
     public static boolean placeAt(LevelAccessor world, BlockState state, BlockPos pos) {
-        if (new ChunkPos(pos).equals(new ChunkPos(pos.relative(state.getValue(FACING))))) {
+        if (ChunkPos.containing(pos).equals(ChunkPos.containing(pos.relative(state.getValue(FACING))))) {
             if (world.getBlockState(pos).is(Blocks.AIR)) {
                 if (world.getBlockState(pos.relative(state.getValue(FACING))).is(Blocks.WARPED_NYLIUM)) {
                     if (world.getBlockState(pos.below()) == state ||

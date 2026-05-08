@@ -18,9 +18,6 @@
         "main": [
             "net.redupro.mcd_d_nether.McddnFabric"
         ],
-        "client": [
-            "net.redupro.mcd_d_nether.McddnClientFabric"
-        ],
         "fabric-datagen": [
             "net.redupro.mcd_d_nether.McddnDataGenerator"
         ]
