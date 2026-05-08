@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "minecraft:netherite_scrap",
-    "W": "minecraft:iron_chain"
+    "#": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "W": {
+      "item": "minecraft:iron_chain"
+    }
   },
   "pattern": [
     "WWW",

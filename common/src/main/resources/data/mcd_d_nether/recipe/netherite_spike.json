@@ -2,9 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": [
-      "mcd_d_nether:netherite_bars"
-    ]
+    "#": {
+      "item": "mcd_d_nether:netherite_bars"
+    }
   },
   "pattern": [
     "#",
