@@ -4,13 +4,11 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.SimpleRandomFeatureConfiguration;
 import net.redupro.mcd_d_nether.Constants;
 import net.redupro.mcd_d_nether.world.level.levelgen.feature.*;
 
 public class McddnFeatures {
     public static final McddnHugeFungusFeature MCDDN_HUGE_FUNGUS_FEATURE = register("mcddn_huge_fungus", new McddnHugeFungusFeature(McddnHugeFungusFeatureConfig.CODEC));
-    public static final SimpleStackedFeature SIMPLE_STACKED_FEATURE = register("simple_stacked_feature", new SimpleStackedFeature(SimpleRandomFeatureConfiguration.CODEC));
     public static final AdvancedBlockFeature ADVANCED_BLOCK_FEATURE = register("advanced_block", new AdvancedBlockFeature(AdvancedBlockFeatureConfig.CODEC));
     public static final CrimsonIvyFeature CRIMSON_IVY_FEATURE = register("crimson_ivy", new CrimsonIvyFeature(NoneFeatureConfiguration.CODEC));
     public static final NetherWallFlowerFeature NETHER_WALL_FLOWER_FEATURE = register("nether_wall_flower", new NetherWallFlowerFeature(NoneFeatureConfiguration.CODEC));
