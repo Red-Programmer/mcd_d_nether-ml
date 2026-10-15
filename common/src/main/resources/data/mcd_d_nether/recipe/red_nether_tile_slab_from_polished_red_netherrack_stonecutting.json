@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "mcd_d_nether:polished_red_netherrack"
+  },
+  "result": {
+    "count": 2,
+    "id": "mcd_d_nether:red_nether_tile_slab"
+  }
+}

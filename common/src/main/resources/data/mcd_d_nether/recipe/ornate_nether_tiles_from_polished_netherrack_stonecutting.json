@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "mcd_d_nether:polished_netherrack"
+  },
+  "result": {
+    "id": "mcd_d_nether:ornate_nether_tiles"
+  }
+}

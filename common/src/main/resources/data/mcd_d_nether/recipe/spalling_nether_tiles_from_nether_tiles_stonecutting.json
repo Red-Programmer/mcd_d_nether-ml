@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "mcd_d_nether:nether_tiles"
+  },
+  "result": {
+    "id": "mcd_d_nether:spalling_nether_tiles"
+  }
+}

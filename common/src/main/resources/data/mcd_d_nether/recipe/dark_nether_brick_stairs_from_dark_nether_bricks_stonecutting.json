@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "mcd_d_nether:dark_nether_bricks"
+  },
+  "result": {
+    "id": "mcd_d_nether:dark_nether_brick_stairs"
+  }
+}

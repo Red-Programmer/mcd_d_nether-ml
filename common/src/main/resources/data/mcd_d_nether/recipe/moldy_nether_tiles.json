@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "mcd_d_nether:nether_tiles"
+    },
+    {
+      "item": "mcd_d_nether:nether_wart_fluff"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "mcd_d_nether:moldy_nether_tiles"
+  }
+}

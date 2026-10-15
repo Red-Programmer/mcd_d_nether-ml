@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:polished_basalt"
+  },
+  "result": {
+    "id": "mcd_d_nether:basalt_tile_stairs"
+  }
+}
